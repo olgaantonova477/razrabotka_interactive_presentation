@@ -27,70 +27,70 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_16 = function() {
+(lib.CachedBmp_10 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_15 = function() {
+(lib.CachedBmp_9 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_14 = function() {
+(lib.CachedBmp_8 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_13 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_12 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_9 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -578,10 +578,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_15();
+	this.instance = new lib.CachedBmp_9();
 	this.instance.setTransform(-0.05,54.15,0.7555,0.7555);
 
-	this.instance_1 = new lib.CachedBmp_14();
+	this.instance_1 = new lib.CachedBmp_8();
 	this.instance_1.setTransform(-0.75,0,0.7555,0.7555);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -603,10 +603,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_13();
+	this.instance = new lib.CachedBmp_7();
 	this.instance.setTransform(0.7,0);
 
-	this.instance_1 = new lib.CachedBmp_12();
+	this.instance_1 = new lib.CachedBmp_6();
 	this.instance_1.setTransform(-2.5,44.7);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -702,10 +702,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_4();
+	this.instance = new lib.CachedBmp_2();
 	this.instance.setTransform(8.7,0);
 
-	this.instance_1 = new lib.CachedBmp_3();
+	this.instance_1 = new lib.CachedBmp_1();
 	this.instance_1.setTransform(-2,50.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -1265,7 +1265,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	// Text
-	this.instance_15 = new lib.CachedBmp_16();
+	this.instance_15 = new lib.CachedBmp_10();
 	this.instance_15.setTransform(51.9,137.95);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1));
@@ -1346,7 +1346,7 @@ if (reversed == null) { reversed = false; }
 		if (this.pr1_foto) this.pr1_foto.visible = false;
 		
 		// ==========================================
-		// 3. СОЗДАНИЕ И ПОЗИЦИОНИРОВАНИЕ VIDEO
+		// 3. СОЗДАНИЕ И ПОЗИЦИОНИРОВАНИЕ VIDEO (ПОТОКОВЫЙ РЕЖИМ METADATA)
 		// ==========================================
 		var animContainer = document.getElementById("animation_container") || document.body;
 		var video = document.getElementById("bg_video");
@@ -1358,7 +1358,7 @@ if (reversed == null) { reversed = false; }
 		    video.defaultMuted = true;
 		    video.loop = true;
 		    video.playsInline = true;
-		    video.preload = "auto";
+		    video.preload = "metadata";
 		    video.setAttribute("muted", "");
 		    video.setAttribute("playsinline", "");
 		    video.setAttribute("webkit-playsinline", "");
@@ -1413,7 +1413,6 @@ if (reversed == null) { reversed = false; }
 		    return Math.max(0, video.currentTime - range.start);
 		}
 		
-		// Останавливаем аудио без вызова .load(), чтобы не сбрасывать сторонний плеер пользователя (Яндекс Музыка и др.)
 		function releaseAudioFocus() {
 		    var ids = ["audio_relax", "audio_dinamika"];
 		    for (var i = 0; i < ids.length; i++) {
@@ -1431,7 +1430,7 @@ if (reversed == null) { reversed = false; }
 		        el = document.createElement("audio");
 		        el.id = id;
 		        el.loop = true;
-		        el.preload = "auto";
+		        el.preload = "metadata";
 		        el.setAttribute("playsinline", "");
 		        document.body.appendChild(el);
 		    }
@@ -1567,12 +1566,13 @@ if (reversed == null) { reversed = false; }
 		    }
 		}
 		
-		// Инициализация видео
+		// Инициализация видео в режиме metadata
 		if (video) {
 		    video.style.display = "block";
 		    video.style.opacity = "1";
 		    video.style.visibility = "visible";
 		    video.style.zIndex = "50";
+		    video.preload = "metadata";
 		    video.ontimeupdate = handleTimeUpdate;
 		    video.muted = true;
 		
@@ -1621,7 +1621,6 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		if (this.pr1_button) {
-		
 		this.pr1_button.removeAllEventListeners("click");
 		this.pr1_button.addEventListener("click", function() {
 		if (this.pr1_foto) {
@@ -1708,13 +1707,13 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.nazad).to({_off:true},1).wait(11));
 
 	// Text
-	this.instance = new lib.CachedBmp_9();
+	this.instance = new lib.CachedBmp_5();
 	this.instance.setTransform(65.35,1344.75,0.966,0.966);
 
-	this.instance_1 = new lib.CachedBmp_8();
+	this.instance_1 = new lib.CachedBmp_4();
 	this.instance_1.setTransform(75.25,1644.65,0.966,0.966);
 
-	this.instance_2 = new lib.CachedBmp_7();
+	this.instance_2 = new lib.CachedBmp_3();
 	this.instance_2.setTransform(64.55,1481.2,0.966,0.966);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).to({state:[]},1).wait(11));
