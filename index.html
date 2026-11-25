@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>index</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #scale_wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1092px;
+    height: 1933px;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+  #animation_container {
+    position: relative;
+    width: 1092px;
+    height: 1933px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  #canvas, #dom_overlay_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1092px;
+    height: 1933px;
+    display: block;
+  }
+  #dom_overlay_container {
+    pointer-events: none;
+  }
+</style>
+<script>
+  (function() {
+    var origGetContext = HTMLCanvasElement.prototype.getContext;
+    HTMLCanvasElement.prototype.getContext = function(type, attributes) {
+      if (type === '2d') {
+        attributes = Object.assign({}, attributes, { willReadFrequently: true });
+      }
+      return origGetContext.call(this, type, attributes);
+    };
+  })();
+
+  function fitStageToScreen() {
+    var wrapper = document.getElementById("scale_wrapper");
+    if (!wrapper) return;
+
+    var winW = window.visualViewport ? window.visualViewport.width : Math.min(window.innerWidth, document.documentElement.clientWidth || window.innerWidth);
+    var winH = window.visualViewport ? window.visualViewport.height : Math.min(window.innerHeight, document.documentElement.clientHeight || window.innerHeight);
+
+    var scale = Math.min(winW / 1092, winH / 1933);
+    var offsetX = Math.floor((winW - 1092 * scale) / 2);
+    var offsetY = Math.floor((winH - 1933 * scale) / 2);
+
+    var transformValue = "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ")";
+    wrapper.style.transform = transformValue;
+    wrapper.style.webkitTransform = transformValue;
+  }
+
+  window.addEventListener("resize", fitStageToScreen);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", fitStageToScreen);
+  }
+  window.addEventListener("orientationchange", function() {
+    setTimeout(fitStageToScreen, 150);
+  });
+</script>
+<script src="libs/1.0.0/createjs.min.js"></script>
+<script src="index.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	fitStageToScreen();
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("F3E39131A32EBC4FA342DDF442C1D8E5");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.index();
+	stage = new lib.Stage(canvas);
+	createjs.Touch.enable(stage);
+
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = 30;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+	fitStageToScreen();
+	setTimeout(fitStageToScreen, 200);
+}
+</script>
+</head>
+<body onload="init();">
+  <div id="scale_wrapper">
+	<div id="animation_container">
+		<canvas id="canvas" width="1092" height="1933"></canvas>
+		<div id="dom_overlay_container"></div>
+	</div>
+  </div>
+</body>
+</html>
+
