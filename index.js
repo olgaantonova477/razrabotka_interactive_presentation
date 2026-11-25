@@ -885,7 +885,7 @@ if (reversed == null) { reversed = false; }
 		/* Stop at This Frame */
 		this.stop();
 		
-		// Настраиваем плавный тикер 30 FPS и поддержку касаний для телефонов
+		// Включаем плавный тикер 30 FPS и поддержку касаний
 		createjs.Ticker.framerate = 30;
 		createjs.Ticker.timingMode = createjs.Ticker.RAF;
 		createjs.Touch.enable(stage);
@@ -926,59 +926,19 @@ if (reversed == null) { reversed = false; }
 		window.addEventListener("pointerdown", unlockMobileAudio, { passive: true });
 		
 		// ==========================================
-		// 2. ФУНКЦИИ ЖИВОЙ АНИМАЦИИ КНОПОК (УВЕЛИЧЕННАЯ АМПЛИТУДА)
-		// ==========================================
-		function startIdleFloat(target, delayMs, amplitudeY) {
-		    if (!target) return;
-		    createjs.Tween.removeTweens(target);
-		    target.y = target.originY;
-		
-		    createjs.Tween.get(target, { loop: true })
-		        .wait(delayMs)
-		        .to({ y: target.originY - amplitudeY }, 1200, createjs.Ease.sineInOut)
-		        .to({ y: target.originY + (amplitudeY * 0.5) }, 1400, createjs.Ease.sineInOut)
-		        .to({ y: target.originY }, 1200, createjs.Ease.sineInOut);
-		}
-		
-		function startIdlePulse(target, delayMs) {
-		    if (!target) return;
-		    createjs.Tween.removeTweens(target);
-		    target.y = target.originY;
-		    target.scaleX = target.originScaleX;
-		    target.scaleY = target.originScaleY;
-		
-		    createjs.Tween.get(target, { loop: true })
-		        .wait(delayMs)
-		        .to({ 
-		            y: target.originY - 14, 
-		            scaleX: target.originScaleX * 1.035, 
-		            scaleY: target.originScaleY * 1.035 
-		        }, 1100, createjs.Ease.sineInOut)
-		        .to({ 
-		            y: target.originY, 
-		            scaleX: target.originScaleX, 
-		            scaleY: target.originScaleY 
-		        }, 1100, createjs.Ease.sineInOut)
-		        .wait(500);
-		}
-		
-		// ==========================================
-		// 3. DMITRY_TEXT (БЕЗ АНИМАЦИИ, ПЕРЕХОД НА САЙТ)
+		// 2. DMITRY_TEXT (СТАТИЧНАЯ КНОПКА ПЕРЕХОДА НА САЙТ)
 		// ==========================================
 		if (this.Dmitry_foto) {
 		    this.Dmitry_foto.visible = false;
 		}
 		
 		if (this.Dmitry_text) {
-		    createjs.Tween.removeTweens(this.Dmitry_text);
 		    this.Dmitry_text.cursor = "pointer";
 		    if (!this.Dmitry_text.hitArea) {
 		        var hit = new createjs.Shape();
 		        hit.graphics.beginFill("#000").drawRect(0, 0, 250, 60); 
 		        this.Dmitry_text.hitArea = hit;
 		    }
-		    this.Dmitry_text.removeAllEventListeners("rollover");
-		    this.Dmitry_text.removeAllEventListeners("rollout");
 		    this.Dmitry_text.removeAllEventListeners("click");
 		    this.Dmitry_text.addEventListener("click", function() {
 		        // Укажите нужную ссылку вместо google.com
@@ -987,150 +947,107 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		// ==========================================
-		// 4. FOTO_VIDEO И SVET_EVENT (ВЫСОКОЕ ПОДПРЫГИВАНИЕ + ССЫЛКИ)
-		// ==========================================
-		if (this.foto_video) {
-		    this.foto_video.cursor = "pointer";
-		    if (this.foto_video.originY === undefined) {
-		        this.foto_video.originY = this.foto_video.y;
-		    }
-		    if (!this.foto_video.hitArea) {
-		        var hit_fv = new createjs.Shape();
-		        hit_fv.graphics.beginFill("#000").drawRect(0, 0, 250, 60); 
-		        this.foto_video.hitArea = hit_fv;
-		    }
-		
-		    startIdleFloat(this.foto_video, 300, 11);
-		
-		    if (!isTouchDevice) {
-		        this.foto_video.removeAllEventListeners("rollover");
-		        this.foto_video.addEventListener("rollover", function() {
-		            createjs.Tween.removeTweens(this);
-		            var origY = this.originY;
-		            createjs.Tween.get(this)
-		                .to({ y: origY - 18 }, 250, createjs.Ease.cubicOut)
-		                .to({ y: origY + 12 }, 300, createjs.Ease.cubicInOut)
-		                .to({ y: origY - 8 }, 250, createjs.Ease.cubicInOut)
-		                .to({ y: origY + 4 }, 200, createjs.Ease.cubicInOut)
-		                .to({ y: origY }, 150, createjs.Ease.cubicIn);
-		        }.bind(this.foto_video));
-		
-		        this.foto_video.removeAllEventListeners("rollout");
-		        this.foto_video.addEventListener("rollout", function() {
-		            startIdleFloat(this, 200, 11);
-		        }.bind(this.foto_video));
-		    }
-		
-		    this.foto_video.removeAllEventListeners("click");
-		    this.foto_video.addEventListener("click", function() {
-		        window.open("https://google.com", "_self");
-		    });
-		}
-		
-		if (this.Svet_Event) {
-		    this.Svet_Event.cursor = "pointer";
-		    if (this.Svet_Event.originY === undefined) {
-		        this.Svet_Event.originY = this.Svet_Event.y;
-		    }
-		    if (!this.Svet_Event.hitArea) {
-		        var hit_se = new createjs.Shape();
-		        hit_se.graphics.beginFill("#000").drawRect(0, 0, 250, 60); 
-		        this.Svet_Event.hitArea = hit_se;
-		    }
-		
-		    startIdleFloat(this.Svet_Event, 700, 11);
-		
-		    if (!isTouchDevice) {
-		        this.Svet_Event.removeAllEventListeners("rollover");
-		        this.Svet_Event.addEventListener("rollover", function() {
-		            createjs.Tween.removeTweens(this);
-		            var origY = this.originY;
-		            createjs.Tween.get(this)
-		                .to({ y: origY - 18 }, 250, createjs.Ease.cubicOut)
-		                .to({ y: origY + 12 }, 300, createjs.Ease.cubicInOut)
-		                .to({ y: origY - 8 }, 250, createjs.Ease.cubicInOut)
-		                .to({ y: origY + 4 }, 200, createjs.Ease.cubicInOut)
-		                .to({ y: origY }, 150, createjs.Ease.cubicIn);
-		        }.bind(this.Svet_Event));
-		
-		        this.Svet_Event.removeAllEventListeners("rollout");
-		        this.Svet_Event.addEventListener("rollout", function() {
-		            startIdleFloat(this, 200, 11);
-		        }.bind(this.Svet_Event));
-		    }
-		
-		    this.Svet_Event.removeAllEventListeners("click");
-		    this.Svet_Event.addEventListener("click", function() {
-		        window.open("https://google.com", "_self");
-		    });
-		}
-		
-		// ==========================================
-		// 5. ФОТО-КНОПКИ ПЕРЕХОДА (MYBUTTON1, MYBUTTON2, MYBUTTON3)
+		// 3. НАСТРОЙКА ПЕРЕХОДОВ ДЛЯ ССЫЛОК И КАРТОЧЕК
 		// ==========================================
 		var self = this;
 		
-		function setupPackageButton(btn, targetFrameIndex, idleDelay) {
+		function setupLinkButton(btn, url) {
 		    if (!btn) return;
 		    btn.cursor = "pointer";
+		    if (btn.originY === undefined) btn.originY = btn.y;
+		    if (!btn.hitArea) {
+		        var h = new createjs.Shape();
+		        h.graphics.beginFill("#000").drawRect(0, 0, 250, 60);
+		        btn.hitArea = h;
+		    }
+		    btn.removeAllEventListeners("click");
+		    btn.addEventListener("click", function() {
+		        window.open(url, "_self");
+		    });
+		}
 		
+		setupLinkButton(this.foto_video, "https://google.com");
+		setupLinkButton(this.Svet_Event, "https://google.com");
+		
+		function setupPackageButton(btn, targetFrameIndex) {
+		    if (!btn) return;
+		    btn.cursor = "pointer";
 		    if (btn.originY === undefined) {
 		        btn.originY = btn.y;
 		        btn.originScaleX = btn.scaleX;
 		        btn.originScaleY = btn.scaleY;
 		    }
 		    if (!btn.hitArea) {
-		        var hit_btn = new createjs.Shape();
-		        hit_btn.graphics.beginFill("#000").drawRect(0, 0, 250, 150); 
-		        btn.hitArea = hit_btn;
+		        var h = new createjs.Shape();
+		        h.graphics.beginFill("#000").drawRect(0, 0, 250, 150);
+		        btn.hitArea = h;
 		    }
-		
-		    startIdlePulse(btn, idleDelay);
-		
-		    if (!isTouchDevice) {
-		        btn.removeAllEventListeners("rollover");
-		        btn.addEventListener("rollover", function() {
-		            createjs.Tween.removeTweens(this);
-		            var origY = this.originY;
-		            var origSX = this.originScaleX;
-		            var origSY = this.originScaleY;
-		
-		            createjs.Tween.get(this)
-		                .to({ y: origY - 18, scaleY: origSY * 1.03 }, 350, createjs.Ease.cubicOut)
-		                .to({ y: origY, scaleY: origSY }, 300, createjs.Ease.cubicIn)
-		                .to({ scaleY: origSY * 0.96, scaleX: origSX * 1.015 }, 120, createjs.Ease.quadOut)
-		                .to({ scaleY: origSY, scaleX: origSX }, 150);
-		        }.bind(btn));
-		
-		        btn.removeAllEventListeners("rollout");
-		        btn.addEventListener("rollout", function() {
-		            startIdlePulse(this, 200);
-		        }.bind(btn));
-		    }
-		
 		    btn.removeAllEventListeners("click");
 		    btn.addEventListener("click", function() {
 		        unlockMobileAudio();
-		
-		        // Останавливаем все фоновые анимации перед переходом на внутреннюю страницу
-		        var allAnimObjs = [self.foto_video, self.Svet_Event, self.myButton1, self.myButton2, self.myButton3];
-		        for (var i = 0; i < allAnimObjs.length; i++) {
-		            if (allAnimObjs[i]) {
-		                createjs.Tween.removeTweens(allAnimObjs[i]);
-		                if (allAnimObjs[i].originY !== undefined) allAnimObjs[i].y = allAnimObjs[i].originY;
-		                if (allAnimObjs[i].originScaleX !== undefined) allAnimObjs[i].scaleX = allAnimObjs[i].originScaleX;
-		                if (allAnimObjs[i].originScaleY !== undefined) allAnimObjs[i].scaleY = allAnimObjs[i].originScaleY;
-		            }
-		        }
-		
+		        stopStartPageBounce();
 		        self.parent.gotoAndStop(targetFrameIndex);
 		    });
 		}
 		
-		// Назначаем переходы по кадрам (0 = старт, 1 = page1, 2 = page_2, 3 = page3)
-		setupPackageButton(this.myButton1, 1, 150);
-		setupPackageButton(this.myButton2, 2, 450);
-		setupPackageButton(this.myButton3, 3, 750);
+		setupPackageButton(this.myButton1, 1);
+		setupPackageButton(this.myButton2, 2);
+		setupPackageButton(this.myButton3, 3);
+		
+		// ==========================================
+		// 4. ЖИВОЕ ПОДПРЫГИВАНИЕ НА КАЖДОМ КАДРЕ (РАБОТАЕТ НА ANDROID, IPHONE И ПК)
+		// ==========================================
+		var animStartTime = Date.now();
+		
+		function animateButtonsOnTick() {
+		    // Если мы уже ушли со стартовой страницы — останавливаем анимацию
+		    if (!self.stage || self.parent.currentFrame !== 0) {
+		        stopStartPageBounce();
+		        return;
+		    }
+		
+		    var t = (Date.now() - animStartTime) / 1000; // время в секундах
+		
+		    // Плавное подпрыгивание для foto_video и Svet_Event (высота 12 пикселей)
+		    if (self.foto_video) {
+		        var wave1 = Math.sin(t * 3.2);
+		        self.foto_video.y = self.foto_video.originY - Math.max(0, wave1) * 12;
+		    }
+		    if (self.Svet_Event) {
+		        var wave2 = Math.sin(t * 3.2 - 1.0);
+		        self.Svet_Event.y = self.Svet_Event.originY - Math.max(0, wave2) * 12;
+		    }
+		
+		    // Энергичное подпрыгивание волной для карточек myButton1, myButton2, myButton3 (высота 16 пикселей + пульсация)
+		    var cards = [self.myButton1, self.myButton2, self.myButton3];
+		    for (var i = 0; i < cards.length; i++) {
+		        var card = cards[i];
+		        if (card) {
+		            var phase = t * 3.5 - (i * 0.85);
+		            var jump = Math.max(0, Math.sin(phase)); // только вверх (подпрыгивание)
+		            card.y = card.originY - (jump * 16);
+		            card.scaleX = card.originScaleX * (1 + jump * 0.03);
+		            card.scaleY = card.originScaleY * (1 + jump * 0.03);
+		        }
+		    }
+		}
+		
+		function stopStartPageBounce() {
+		    createjs.Ticker.removeEventListener("tick", animateButtonsOnTick);
+		    var allObjs = [self.foto_video, self.Svet_Event, self.myButton1, self.myButton2, self.myButton3];
+		    for (var i = 0; i < allObjs.length; i++) {
+		        var obj = allObjs[i];
+		        if (obj) {
+		            if (obj.originY !== undefined) obj.y = obj.originY;
+		            if (obj.originScaleX !== undefined) obj.scaleX = obj.originScaleX;
+		            if (obj.originScaleY !== undefined) obj.scaleY = obj.originScaleY;
+		        }
+		    }
+		}
+		
+		// Запускаем анимацию (предварительно очистив старый слушатель, если вернулись по кнопке "Назад")
+		createjs.Ticker.removeEventListener("tick", animateButtonsOnTick);
+		createjs.Ticker.addEventListener("tick", animateButtonsOnTick);
 	}
 
 	// actions tween:
