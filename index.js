@@ -1346,7 +1346,7 @@ if (reversed == null) { reversed = false; }
 		if (this.pr1_foto) this.pr1_foto.visible = false;
 		
 		// ==========================================
-		// 3. СОЗДАНИЕ И ПОЗИЦИОНИРОВАНИЕ VIDEO (ПОТОКОВЫЙ РЕЖИМ METADATA)
+		// 3. СОЗДАНИЕ И ПОЗИЦИОНИРОВАНИЕ VIDEO
 		// ==========================================
 		var animContainer = document.getElementById("animation_container") || document.body;
 		var video = document.getElementById("bg_video");
@@ -1358,7 +1358,7 @@ if (reversed == null) { reversed = false; }
 		    video.defaultMuted = true;
 		    video.loop = true;
 		    video.playsInline = true;
-		    video.preload = "metadata";
+		    video.preload = "auto";
 		    video.setAttribute("muted", "");
 		    video.setAttribute("playsinline", "");
 		    video.setAttribute("webkit-playsinline", "");
@@ -1413,6 +1413,7 @@ if (reversed == null) { reversed = false; }
 		    return Math.max(0, video.currentTime - range.start);
 		}
 		
+		// Останавливаем аудио без вызова .load(), чтобы не сбрасывать сторонний плеер пользователя (Яндекс Музыка и др.)
 		function releaseAudioFocus() {
 		    var ids = ["audio_relax", "audio_dinamika"];
 		    for (var i = 0; i < ids.length; i++) {
@@ -1430,7 +1431,7 @@ if (reversed == null) { reversed = false; }
 		        el = document.createElement("audio");
 		        el.id = id;
 		        el.loop = true;
-		        el.preload = "metadata";
+		        el.preload = "auto";
 		        el.setAttribute("playsinline", "");
 		        document.body.appendChild(el);
 		    }
@@ -1566,13 +1567,12 @@ if (reversed == null) { reversed = false; }
 		    }
 		}
 		
-		// Инициализация видео в режиме metadata
+		// Инициализация видео
 		if (video) {
 		    video.style.display = "block";
 		    video.style.opacity = "1";
 		    video.style.visibility = "visible";
 		    video.style.zIndex = "50";
-		    video.preload = "metadata";
 		    video.ontimeupdate = handleTimeUpdate;
 		    video.muted = true;
 		
@@ -1621,6 +1621,7 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		if (this.pr1_button) {
+		
 		this.pr1_button.removeAllEventListeners("click");
 		this.pr1_button.addEventListener("click", function() {
 		if (this.pr1_foto) {
