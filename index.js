@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[0,0,973,1413],[0,2029,282,5],[1739,1686,277,76],[1854,1993,162,48],[1854,2043,167,5],[1577,1939,341,52],[0,1415,1118,176],[0,1593,361,179],[478,1984,236,55],[0,2036,257,4],[316,1835,160,160],[363,1593,240,240],[1577,1848,251,89],[0,1774,314,91],[1739,1764,208,75],[478,1895,263,87],[1577,1993,275,52],[743,1917,258,88],[1830,1841,195,52],[0,1867,160,160],[767,1593,160,160],[929,1593,160,160],[975,0,960,1280],[605,1593,160,300],[1120,1282,447,397],[1569,1282,353,402],[1091,1681,160,160],[1924,1282,94,94],[767,1755,160,160],[929,1755,160,160],[1253,1681,160,160],[1091,1843,160,160],[975,1282,96,96],[1253,1843,160,160],[1920,1895,96,96],[1415,1686,160,160],[1415,1848,160,160],[1577,1686,160,160],[162,1867,96,96]]}
+		{name:"index_atlas_1", frames: [[0,0,973,1413],[1686,1057,282,5],[1524,1066,277,76],[1824,658,162,48],[1824,708,167,5],[1524,1144,341,52],[0,1415,1118,176],[975,803,361,179],[1686,742,341,52],[0,1593,1118,176],[1330,399,361,179],[1686,796,341,52],[0,1771,1118,176],[1424,0,361,179],[1686,904,236,55],[1424,363,257,4],[1120,1226,160,160],[1120,984,240,240],[1693,436,251,89],[1424,181,314,91],[1824,527,208,75],[1424,274,263,87],[1686,850,275,52],[1787,162,258,88],[1824,604,195,52],[1282,1226,160,160],[1362,882,160,160],[1500,580,160,160],[1338,580,160,300],[975,0,447,397],[975,399,353,402],[1362,1044,160,160],[1803,961,94,94],[1444,1206,160,160],[1524,742,160,160],[1662,580,160,160],[1693,274,160,160],[1949,0,96,96],[1787,0,160,160],[1855,252,96,96],[1524,904,160,160],[1444,1368,160,160],[1120,1388,160,160],[1946,350,96,96]]}
 ];
 
 
@@ -27,191 +27,226 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_10 = function() {
+(lib.CachedBmp_13 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_9 = function() {
+(lib.CachedBmp_12 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_11 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_10 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_9 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_8 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_16 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_15 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.бизнес = function() {
+(lib.CachedBmp_14 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._2728 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap1 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap2 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap4 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap4_1 = function() {
+(lib.CachedBmp_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap5 = function() {
+(lib.бизнес = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap5_1 = function() {
+(lib._2728 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap6 = function() {
+(lib.Bitmap1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.color11pngcopy = function() {
+(lib.Bitmap2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.color2 = function() {
+(lib.Bitmap4 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.color3 = function() {
+(lib.Bitmap4_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Dima = function() {
+(lib.Bitmap5 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fon_1 = function() {
+(lib.Bitmap5_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Koron = function() {
+(lib.Bitmap6 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.paal = function() {
+(lib.color11pngcopy = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.premium = function() {
+(lib.color2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.color3 = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.fon_1 = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Koron = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.paal = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.premium = function() {
+	this.initialize(ss["index_atlas_1"]);
+	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -224,84 +259,84 @@ p.nominalBounds = new cjs.Rectangle(0,0,3483,3508);
 
 (lib.s_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(27);
+	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_19 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(28);
+	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_20 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(29);
+	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_24 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(30);
+	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_25 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(31);
+	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_31 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(32);
+	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_37 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(33);
+	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_4 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(34);
+	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_5 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(35);
+	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_9 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(36);
+	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.standart = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(37);
+	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.zv = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(38);
+	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -437,6 +472,68 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,251,89);
 
 
+(lib.Symbol3 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Price111
+	this.instance = new lib.Price1();
+	this.instance.setTransform(0,0,0.2448,0.1576);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.Symbol3, new cjs.Rectangle(0,0,852.7,553), null);
+
+
+(lib.Symbol2 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_6 (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("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");
+	mask.setTransform(332.8716,28.2158);
+
+	// zapas_gradient
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#6600FF").ss(0.1,2,1).p("AYTHCMgwlAAAIAAuDMAwlAAAg");
+	this.shape.setTransform(335.9924,34.5653,2.1478,1.1056,0,0,180);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.lf(["#E38308","#FFFFFF"],[0,1],155.5,0,-155.5,0).s().p("A4SHCIAAuDMAwlAAAIAAODg");
+	this.shape_1.setTransform(335.9924,34.5653,2.1478,1.1056,0,0,180);
+
+	var maskedShapeInstanceList = [this.shape,this.shape_1];
+
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).to({state:[]},1).wait(11));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,670,68.8);
+
+
 (lib.Symbol1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -476,7 +573,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.Symbol1, new cjs.Rectangle(0,0,602.7,72.1), null);
 
 
-(lib.Symbol2 = function(mode,startPosition,loop,reversed) {
+(lib.Symbol2_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -495,7 +592,7 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol2, new cjs.Rectangle(0,0,59.1,83), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol2_1, new cjs.Rectangle(0,0,59.1,83), null);
 
 
 (lib.Crystal_pro = function(mode,startPosition,loop,reversed) {
@@ -578,10 +675,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_9();
+	this.instance = new lib.CachedBmp_12();
 	this.instance.setTransform(-0.05,54.15,0.7555,0.7555);
 
-	this.instance_1 = new lib.CachedBmp_8();
+	this.instance_1 = new lib.CachedBmp_11();
 	this.instance_1.setTransform(-0.75,0,0.7555,0.7555);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -603,10 +700,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_7();
+	this.instance = new lib.CachedBmp_10();
 	this.instance.setTransform(0.7,0);
 
-	this.instance_1 = new lib.CachedBmp_6();
+	this.instance_1 = new lib.CachedBmp_9();
 	this.instance_1.setTransform(-2.5,44.7);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -614,28 +711,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.Dmitry_text, new cjs.Rectangle(-2.5,0,167,49.7), null);
-
-
-(lib.Dmitry_foto = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.instance = new lib.Dima();
-	this.instance.setTransform(0,0,1.1065,1.0409);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Dmitry_foto, new cjs.Rectangle(0,0,1062.2,1332.4), null);
 
 
 (lib.Price111 = function(mode,startPosition,loop,reversed) {
@@ -809,7 +884,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Crystal_mini
-	this.aa = new lib.Symbol2();
+	this.aa = new lib.Symbol2_1();
 	this.aa.name = "aa";
 	this.aa.setTransform(253.75,54.5,1.0014,0.8385,0,0,0,29.6,41.6);
 	var aaFilter_1 = new cjs.ColorFilter(0.85,0.85,0.85,1,0,0,0,0);
@@ -868,7 +943,7 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {Dmitry_foto:0};
+	props.labels = {};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
@@ -1053,13 +1128,6 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Dmitry_foto
-	this.Dmitry_foto = new lib.Dmitry_foto();
-	this.Dmitry_foto.name = "Dmitry_foto";
-	this.Dmitry_foto.setTransform(530.4,915.9,0.4839,0.5111,0,0,0,531.5,666.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.Dmitry_foto).wait(1));
-
 	// Svet_Event
 	this.Svet_Event = new lib.Svet_Event_text();
 	this.Svet_Event.name = "Svet_Event";
@@ -1182,7 +1250,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 	// Text
-	this.instance_15 = new lib.CachedBmp_10();
+	this.instance_15 = new lib.CachedBmp_13();
 	this.instance_15.setTransform(51.9,137.95);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1));
@@ -1613,26 +1681,26 @@ if (reversed == null) { reversed = false; }
 	// Mute
 	this.btn_mute = new lib.Mute();
 	this.btn_mute.name = "btn_mute";
-	this.btn_mute.setTransform(937.6,1768.3,1.155,1.057,0,0,0,51.8,102.2);
+	this.btn_mute.setTransform(938.95,1768.3,1.155,1.057,0,0,0,51.8,102.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.btn_mute).to({_off:true},1).wait(11));
 
 	// nazad
 	this.nazad = new lib.Symbol8();
 	this.nazad.name = "nazad";
-	this.nazad.setTransform(239,1717.1,1.1122,1.2132,0,0,0,157.1,45.5);
+	this.nazad.setTransform(239,1717.1,1.0917,1.2132,0,0,0,157.1,45.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.nazad).to({_off:true},1).wait(11));
 
 	// Text
-	this.instance = new lib.CachedBmp_5();
-	this.instance.setTransform(65.35,1344.75,0.966,0.966);
+	this.instance = new lib.CachedBmp_8();
+	this.instance.setTransform(60.3,1344.75,0.966,0.966);
 
-	this.instance_1 = new lib.CachedBmp_4();
-	this.instance_1.setTransform(75.25,1644.65,0.966,0.966);
+	this.instance_1 = new lib.CachedBmp_7();
+	this.instance_1.setTransform(87.8,1644.65,0.966,0.966);
 
-	this.instance_2 = new lib.CachedBmp_3();
-	this.instance_2.setTransform(64.55,1481.2,0.966,0.966);
+	this.instance_2 = new lib.CachedBmp_6();
+	this.instance_2.setTransform(64.55,1466.45,0.966,0.966);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).to({state:[]},1).wait(11));
 
@@ -1674,7 +1742,7 @@ if (reversed == null) { reversed = false; }
 	// ramka_video
 	this.video_slot = new lib.video_slot();
 	this.video_slot.name = "video_slot";
-	this.video_slot.setTransform(539.6,784.95,1,1,0,0,0,530.5,530.5);
+	this.video_slot.setTransform(545.65,785.05,1.0038,1,0,0,0,530.5,530.6);
 	this.video_slot.alpha = 0;
 
 	this.timeline.addTween(cjs.Tween.get(this.video_slot).to({_off:true},1).wait(11));
@@ -1693,7 +1761,987 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(8.6,117.4,1146.7,1697.8999999999999);
+p.nominalBounds = new cjs.Rectangle(12.2,117.4,1155.7,1697.8999999999999);
+
+
+(lib.page_3 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_0 = function() {
+		// ==========================================
+		// 1. НАСТРОЙКИ ВИДЕО, АУДИО И КНОПОК ДЛЯ PAGE_3
+		// ==========================================
+		var PAGE_VIDEO_FILE     = "videos/page3_all.mp4";       // Склеенное видео для page_3
+		var AUDIO_RELAX_FILE    = "videos/sound_relax3.mp3";    // Музыка Relax для page_3
+		var AUDIO_DINAMIKA_FILE = "videos/sound_dinamika3.mp3"; // Музыка Dinamika для page_3
+		
+		var BUTTON_FOTO_NAME    = "pr3_button"; // Имя кнопки открытия фото на page_3
+		var FOTO_OBJ_NAME       = "pr3_foto";   // Имя самого клипа с фотографией на page_3
+		
+		// Резервные координаты окна видео (в пикселях сцены 1092x1933)
+		var DEFAULT_SLOT = { x: 110, y: 310, width: 872, height: 1140 };
+		
+		// Реальные секунды начала (start) и конца (end) каждого куска внутри page3_all.mp4
+		var SEGMENTS = {
+		    relax: {
+		        c1: { start: 0,  end: 26 }, // color1 (Relax)
+		        c2: { start: 26, end: 52 }, // color2 (Relax)
+		        c3: { start: 52, end: 78 }  // color3 (Relax)
+		    },
+		    dinamika: {
+		        c1: { start: 78, end: 104 }, // color1 (Dinamika)
+		        c2: { start: 104, end: 130 }, // color2 (Dinamika)
+		        c3: { start: 130, end: 156 }  // color3 (Dinamika)
+		    }
+		};
+		
+		// ==========================================
+		// 2. СИСТЕМНЫЕ НАСТРОЙКИ СЦЕНЫ
+		// ==========================================
+		this.stop();
+		
+		var fotoBtn = this[BUTTON_FOTO_NAME];
+		var fotoObj = this[FOTO_OBJ_NAME];
+		
+		if (this.relax) this.relax.cursor = "pointer";
+		if (this.dinamika) this.dinamika.cursor = "pointer";
+		if (this.color1) this.color1.cursor = "pointer";
+		if (this.color2) this.color2.cursor = "pointer";
+		if (this.color3) this.color3.cursor = "pointer";
+		if (this.nazad) this.nazad.cursor = "pointer";
+		if (fotoBtn) fotoBtn.cursor = "pointer";
+		if (this.btn_mute) this.btn_mute.cursor = "pointer";
+		
+		if (fotoObj) fotoObj.visible = false;
+		
+		// ==========================================
+		// 3. СОЗДАНИЕ И ПОЗИЦИОНИРОВАНИЕ VIDEO
+		// ==========================================
+		var animContainer = document.getElementById("animation_container") || document.body;
+		var video = document.getElementById("bg_video");
+		
+		if (!video) {
+		    video = document.createElement("video");
+		    video.id = "bg_video";
+		    video.muted = true;
+		    video.defaultMuted = true;
+		    video.loop = true;
+		    video.playsInline = true;
+		    video.preload = "metadata";
+		    video.setAttribute("muted", "");
+		    video.setAttribute("playsinline", "");
+		    video.setAttribute("webkit-playsinline", "");
+		    video.style.position = "absolute";
+		    video.style.objectFit = "cover";
+		    video.style.pointerEvents = "none";
+		    video.style.zIndex = "50";
+		    animContainer.appendChild(video);
+		}
+		
+		var slotObj = this.video_slot;
+		var pos = { x: DEFAULT_SLOT.x, y: DEFAULT_SLOT.y, w: DEFAULT_SLOT.width, h: DEFAULT_SLOT.height };
+		
+		if (slotObj) {
+		    var b = slotObj.nominalBounds || slotObj.getBounds();
+		    if (b && b.width > 0 && b.height > 0) {
+		        pos.x = slotObj.x + (b.x - slotObj.regX) * slotObj.scaleX;
+		        pos.y = slotObj.y + (b.y - slotObj.regY) * slotObj.scaleY;
+		        pos.w = b.width * slotObj.scaleX;
+		        pos.h = b.height * slotObj.scaleY;
+		    }
+		    slotObj.visible = false;
+		}
+		
+		if (video) {
+		    video.style.left    = (pos.x / 1092 * 100) + "%";
+		    video.style.top     = (pos.y / 1933 * 100) + "%";
+		    video.style.width   = (pos.w / 1092 * 100) + "%";
+		    video.style.height  = (pos.h / 1933 * 100) + "%";
+		    video.style.display = "block";
+		}
+		
+		stage.update();
+		createjs.Ticker.removeEventListener("tick", stage);
+		
+		// ==========================================
+		// 4. ЛОГИКА ПЛЕЕРА ПО ТАЙМКОДАМ И СИНХРОННОГО АУДИО
+		// ==========================================
+		var currentMode = "relax";
+		var currentColorKey = "c1";
+		var isFotoOpen = false;
+		var isSoundGlobalOn = true;
+		
+		function getCurrentRange() {
+		    return SEGMENTS[currentMode][currentColorKey];
+		}
+		
+		function getVideoOffsetInSegment() {
+		    if (!video) return 0;
+		    var range = getCurrentRange();
+		    if (!range) return 0;
+		    return Math.max(0, video.currentTime - range.start);
+		}
+		
+		function releaseAudioFocus() {
+		    var ids = ["audio_relax", "audio_dinamika"];
+		    for (var i = 0; i < ids.length; i++) {
+		        var el = document.getElementById(ids[i]);
+		        if (el) {
+		            el.pause();
+		            el.removeAttribute("src");
+		        }
+		    }
+		}
+		
+		function getOrCreateAudio(id, fileSrc) {
+		    var el = document.getElementById(id);
+		    if (!el) {
+		        el = document.createElement("audio");
+		        el.id = id;
+		        el.loop = true;
+		        el.preload = "metadata";
+		        el.setAttribute("playsinline", "");
+		        document.body.appendChild(el);
+		    }
+		    if (!el.getAttribute("src") || el.getAttribute("src") !== fileSrc) {
+		        el.src = fileSrc;
+		    }
+		    return el;
+		}
+		
+		releaseAudioFocus();
+		
+		function playAudioAtTime(audioEl, syncTime) {
+		    audioEl.muted = false;
+		    audioEl.volume = 1.0;
+		
+		    if (syncTime === null || syncTime === undefined) {
+		        audioEl.play().catch(function(){});
+		        return;
+		    }
+		
+		    var applyTimeAndPlay = function() {
+		        try {
+		            if (audioEl.duration && syncTime >= audioEl.duration) {
+		                audioEl.currentTime = syncTime % audioEl.duration;
+		            } else {
+		                audioEl.currentTime = syncTime;
+		            }
+		        } catch(e) {}
+		        audioEl.play().catch(function(){});
+		    };
+		
+		    if (audioEl.readyState >= 1) {
+		        applyTimeAndPlay();
+		    } else {
+		        var onMeta = function() {
+		            audioEl.removeEventListener("loadedmetadata", onMeta);
+		            applyTimeAndPlay();
+		        };
+		        audioEl.addEventListener("loadedmetadata", onMeta);
+		        audioEl.play().catch(function(){});
+		    }
+		}
+		
+		function syncAudio(shouldPlay, syncTime) {
+		    if (!isSoundGlobalOn) {
+		        releaseAudioFocus();
+		        return;
+		    }
+		
+		    if (isFotoOpen || !shouldPlay) {
+		        var r = document.getElementById("audio_relax");
+		        var d = document.getElementById("audio_dinamika");
+		        if (r) r.pause();
+		        if (d) d.pause();
+		        return;
+		    }
+		
+		    if (currentMode === "relax") {
+		        var aDin = document.getElementById("audio_dinamika");
+		        if (aDin) { aDin.pause(); aDin.removeAttribute("src"); }
+		
+		        var aRel = getOrCreateAudio("audio_relax", AUDIO_RELAX_FILE);
+		        playAudioAtTime(aRel, syncTime);
+		    } else {
+		        var aRel2 = document.getElementById("audio_relax");
+		        if (aRel2) { aRel2.pause(); aRel2.removeAttribute("src"); }
+		
+		        var aDin2 = getOrCreateAudio("audio_dinamika", AUDIO_DINAMIKA_FILE);
+		        playAudioAtTime(aDin2, syncTime);
+		    }
+		}
+		
+		function handleTimeUpdate() {
+		    if (!video || video.paused || video.seeking) return;
+		    var range = getCurrentRange();
+		    if (!range) return;
+		
+		    var startTime = range.start;
+		    var endTime = range.end - 0.15;
+		
+		    if (video.currentTime >= endTime || video.currentTime < startTime - 0.3) {
+		        try { video.currentTime = startTime; } catch(e) {}
+		        if (isSoundGlobalOn) {
+		            syncAudio(true, 0);
+		        }
+		    }
+		}
+		
+		function switchPlayback(newMode, newColorKey, forcePlay) {
+		    if (!video) return;
+		
+		    video.style.display = "block";
+		    video.style.opacity = "1";
+		    video.style.visibility = "visible";
+		
+		    // Повторное нажатие на активный режим — пауза / запуск с текущей секунды
+		    if (newMode !== null && newMode === currentMode && newColorKey === null && forcePlay) {
+		        if (!video.paused) {
+		            video.pause();
+		            syncAudio(false, null);
+		        } else {
+		            video.play().catch(function(){});
+		            syncAudio(true, null);
+		        }
+		        return;
+		    }
+		
+		    var oldRange = getCurrentRange();
+		    var offsetInsideSegment = Math.max(0, video.currentTime - oldRange.start);
+		    var isColorOnlySwitch = (newMode === null && newColorKey !== null);
+		    var isModeSwitch = (newMode !== null && newMode !== currentMode);
+		
+		    if (newMode !== null) {
+		        currentMode = newMode;
+		    }
+		    if (newColorKey !== null) {
+		        currentColorKey = newColorKey;
+		    }
+		
+		    var newRange = getCurrentRange();
+		    var newDuration = newRange.end - newRange.start;
+		    var targetTime = newRange.start;
+		
+		    if (isColorOnlySwitch && offsetInsideSegment < newDuration - 0.25) {
+		        targetTime = newRange.start + offsetInsideSegment;
+		    }
+		
+		    try { video.currentTime = targetTime; } catch(e) {}
+		
+		    if (forcePlay || !video.paused) {
+		        video.play().catch(function(){});
+		        syncAudio(true, isModeSwitch ? 0 : null);
+		    }
+		}
+		
+		// Инициализация видео (автоматически подменяет файл, если пришли с page1 или page_2)
+		if (video) {
+		    video.style.display = "block";
+		    video.style.opacity = "1";
+		    video.style.visibility = "visible";
+		    video.style.zIndex = "50";
+		    video.preload = "metadata";
+		    video.ontimeupdate = handleTimeUpdate;
+		    video.muted = true;
+		
+		    var startPos = SEGMENTS.relax.c1.start;
+		
+		    if (video.getAttribute("data-file") !== PAGE_VIDEO_FILE) {
+		        video.setAttribute("data-file", PAGE_VIDEO_FILE);
+		        video.src = PAGE_VIDEO_FILE;
+		        video.load();
+		        
+		        var onMeta = function() {
+		            video.removeEventListener("loadedmetadata", onMeta);
+		            try { video.currentTime = startPos; } catch(e) {}
+		        };
+		        video.addEventListener("loadedmetadata", onMeta);
+		    } else {
+		        video.pause();
+		        try { video.currentTime = startPos; } catch(e) {}
+		    }
+		}
+		
+		// ==========================================
+		// 5. ОБРАБОТЧИКИ КНОПОК
+		// ==========================================
+		if (this.relax) {
+		    this.relax.removeAllEventListeners("click");
+		    this.relax.addEventListener("click", function() { switchPlayback("relax", null, true); });
+		}
+		
+		if (this.dinamika) {
+		    this.dinamika.removeAllEventListeners("click");
+		    this.dinamika.addEventListener("click", function() { switchPlayback("dinamika", null, true); });
+		}
+		
+		if (this.color1) {
+		    this.color1.removeAllEventListeners("click");
+		    this.color1.addEventListener("click", function() { switchPlayback(null, "c1", false); });
+		}
+		if (this.color2) {
+		this.color2.removeAllEventListeners("click");
+		this.color2.addEventListener("click", function() { switchPlayback(null, "c2", false); });
+		}
+		if (this.color3) {
+		this.color3.removeAllEventListeners("click");
+		this.color3.addEventListener("click", function() { switchPlayback(null, "c3", false); });
+		}
+		if (fotoBtn) {
+		fotoBtn.removeAllEventListeners("click");
+		fotoBtn.addEventListener("click", function() {
+		if (fotoObj) {
+		fotoObj.visible = !fotoObj.visible;
+		isFotoOpen = fotoObj.visible;
+		if (isFotoOpen) {
+		if (video) {
+		video.pause();
+		video.style.display = "none";
+		}
+		syncAudio(false, null);
+		} else {
+		if (video) video.style.display = "block";
+		syncAudio(video && !video.paused, getVideoOffsetInSegment());
+		}
+		stage.update();
+		}
+		});
+		}
+		if (this.btn_mute) {
+		this.btn_mute.removeAllEventListeners("click");
+		this.btn_mute.addEventListener("click", function() {
+		isSoundGlobalOn = !isSoundGlobalOn;
+		if (!isSoundGlobalOn) {
+		releaseAudioFocus();
+		} else {
+		var currentVideoSec = getVideoOffsetInSegment();
+		syncAudio(video && !video.paused, currentVideoSec);
+		}
+		});
+		}
+		if (this.nazad) {
+		this.nazad.removeAllEventListeners("click");
+		this.nazad.addEventListener("click", function() {
+		if (video) {
+		video.pause();
+		video.ontimeupdate = null;
+		video.style.display = "none";
+		}
+		releaseAudioFocus();
+		createjs.Ticker.addEventListener("tick", stage);
+		this.parent.gotoAndStop(0);
+		stage.update();
+		}.bind(this));
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12));
+
+	// Price111
+	this.pr3_foto = new lib.Price111();
+	this.pr3_foto.name = "pr3_foto";
+	this.pr3_foto.setTransform(968.95,1105.8,0.9431,1.2385,0,0,0,975.8,535.6);
+
+	this.timeline.addTween(cjs.Tween.get(this.pr3_foto).to({_off:true},1).wait(11));
+
+	// spezifikaziy
+	this.pr3_button = new lib.Symbol4();
+	this.pr3_button.name = "pr3_button";
+	this.pr3_button.setTransform(871.2,190.7,1.2078,1.2795,0,0,0,125.7,44.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.pr3_button).wait(12));
+
+	// paket
+	this.instance = new lib.Symbol2("synched",0);
+	this.instance.setTransform(369.6,194.2,0.3716,1.1642,0,0,0,335,34.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12));
+
+	// Mute
+	this.btn_mute = new lib.Mute();
+	this.btn_mute.name = "btn_mute";
+	this.btn_mute.setTransform(938.95,1768.3,1.155,1.057,0,0,0,51.8,102.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.btn_mute).to({_off:true},1).wait(11));
+
+	// nazad
+	this.nazad = new lib.Symbol8();
+	this.nazad.name = "nazad";
+	this.nazad.setTransform(239,1717.1,1.0917,1.2132,0,0,0,157.1,45.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.nazad).to({_off:true},1).wait(11));
+
+	// Text
+	this.instance_1 = new lib.CachedBmp_16();
+	this.instance_1.setTransform(60.3,1344.75,0.966,0.966);
+
+	this.instance_2 = new lib.CachedBmp_15();
+	this.instance_2.setTransform(87.8,1644.65,0.966,0.966);
+
+	this.instance_3 = new lib.CachedBmp_14();
+	this.instance_3.setTransform(64.55,1466.45,0.966,0.966);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1}]}).to({state:[]},1).wait(11));
+
+	// Color1
+	this.color1 = new lib.Color11();
+	this.color1.name = "color1";
+	this.color1.setTransform(523.15,1630.1,1.1156,1.1209,0,0,0,80,160.1);
+
+	this.timeline.addTween(cjs.Tween.get(this.color1).to({_off:true},1).wait(11));
+
+	// Color2
+	this.color2 = new lib.Color2();
+	this.color2.name = "color2";
+	this.color2.setTransform(697.3,1581.8,1.5325,1.4817,0,0,0,39.2,83.3);
+
+	this.timeline.addTween(cjs.Tween.get(this.color2).to({_off:true},1).wait(11));
+
+	// Color3
+	this.color3 = new lib.Color3();
+	this.color3.name = "color3";
+	this.color3.setTransform(903.55,1621,1.5551,1.5272,0,0,0,38.8,110.1);
+
+	this.timeline.addTween(cjs.Tween.get(this.color3).to({_off:true},1).wait(11));
+
+	// relax
+	this.relax = new lib.Symbol11();
+	this.relax.name = "relax";
+	this.relax.setTransform(573.1,1374.75,1,1,0,0,0,131.5,43.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.relax).wait(12));
+
+	// dinamika
+	this.dinamika = new lib.Symbol13();
+	this.dinamika.name = "dinamika";
+	this.dinamika.setTransform(882.15,1375.25,1,1,0,0,0,129,44);
+
+	this.timeline.addTween(cjs.Tween.get(this.dinamika).wait(12));
+
+	// ramka_video
+	this.video_slot = new lib.video_slot();
+	this.video_slot.name = "video_slot";
+	this.video_slot.setTransform(545.65,785.05,1.0038,1,0,0,0,530.5,530.6);
+	this.video_slot.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.video_slot).to({_off:true},1).wait(11));
+
+	// page1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FF9900").ss(2,1,1).p("EhSZiEeMCkzAAAMAAAEI9MikzAAAg");
+	this.shape.setTransform(540.575,966.325);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#001320").s().p("EhSZCEfMAAAkI9MCkzAAAMAAAEI9g");
+	this.shape_1.setTransform(540.575,966.325);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).to({state:[]},1).wait(11));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(12.2,117.4,1155.7,1697.8999999999999);
+
+
+(lib.page_2 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_0 = function() {
+		// ==========================================
+		// 1. НАСТРОЙКИ ВИДЕО, АУДИО И КНОПОК ДЛЯ PAGE_2
+		// ==========================================
+		var PAGE_VIDEO_FILE     = "videos/page2_all.mp4";       // Склеенное видео для page_2
+		var AUDIO_RELAX_FILE    = "videos/sound_relax2.mp3";    // Музыка Relax для page_2
+		var AUDIO_DINAMIKA_FILE = "videos/sound_dinamika2.mp3"; // Музыка Dinamika для page_2
+		
+		var BUTTON_FOTO_NAME    = "pr2_button"; // Имя кнопки открытия фото на page_2
+		var FOTO_OBJ_NAME       = "pr2_foto";   // Имя самого клипа с фотографией на page_2
+		
+		// Резервные координаты окна видео (в пикселях сцены 1092x1933)
+		var DEFAULT_SLOT = { x: 110, y: 310, width: 872, height: 1140 };
+		
+		// Реальные секунды начала (start) и конца (end) каждого куска внутри page2_all.mp4
+		var SEGMENTS = {
+		    relax: {
+		        c1: { start: 0,  end: 26 }, // color1 (Relax)
+		        c2: { start: 26, end: 52 }, // color2 (Relax)
+		        c3: { start: 52, end: 78 }  // color3 (Relax)
+		    },
+		    dinamika: {
+		        c1: { start: 78, end: 104 }, // color1 (Dinamika)
+		        c2: { start: 104, end: 130 }, // color2 (Dinamika)
+		        c3: { start: 130, end: 156 }  // color3 (Dinamika)
+		    }
+		};
+		
+		// ==========================================
+		// 2. СИСТЕМНЫЕ НАСТРОЙКИ СЦЕНЫ
+		// ==========================================
+		this.stop();
+		
+		var fotoBtn = this[BUTTON_FOTO_NAME];
+		var fotoObj = this[FOTO_OBJ_NAME];
+		
+		if (this.relax) this.relax.cursor = "pointer";
+		if (this.dinamika) this.dinamika.cursor = "pointer";
+		if (this.color1) this.color1.cursor = "pointer";
+		if (this.color2) this.color2.cursor = "pointer";
+		if (this.color3) this.color3.cursor = "pointer";
+		if (this.nazad) this.nazad.cursor = "pointer";
+		if (fotoBtn) fotoBtn.cursor = "pointer";
+		if (this.btn_mute) this.btn_mute.cursor = "pointer";
+		
+		if (fotoObj) fotoObj.visible = false;
+		
+		// ==========================================
+		// 3. СОЗДАНИЕ И ПОЗИЦИОНИРОВАНИЕ VIDEO
+		// ==========================================
+		var animContainer = document.getElementById("animation_container") || document.body;
+		var video = document.getElementById("bg_video");
+		
+		if (!video) {
+		    video = document.createElement("video");
+		    video.id = "bg_video";
+		    video.muted = true;
+		    video.defaultMuted = true;
+		    video.loop = true;
+		    video.playsInline = true;
+		    video.preload = "metadata";
+		    video.setAttribute("muted", "");
+		    video.setAttribute("playsinline", "");
+		    video.setAttribute("webkit-playsinline", "");
+		    video.style.position = "absolute";
+		    video.style.objectFit = "cover";
+		    video.style.pointerEvents = "none";
+		    video.style.zIndex = "50";
+		    animContainer.appendChild(video);
+		}
+		
+		var slotObj = this.video_slot;
+		var pos = { x: DEFAULT_SLOT.x, y: DEFAULT_SLOT.y, w: DEFAULT_SLOT.width, h: DEFAULT_SLOT.height };
+		
+		if (slotObj) {
+		    var b = slotObj.nominalBounds || slotObj.getBounds();
+		    if (b && b.width > 0 && b.height > 0) {
+		        pos.x = slotObj.x + (b.x - slotObj.regX) * slotObj.scaleX;
+		        pos.y = slotObj.y + (b.y - slotObj.regY) * slotObj.scaleY;
+		        pos.w = b.width * slotObj.scaleX;
+		        pos.h = b.height * slotObj.scaleY;
+		    }
+		    slotObj.visible = false;
+		}
+		
+		if (video) {
+		    video.style.left    = (pos.x / 1092 * 100) + "%";
+		    video.style.top     = (pos.y / 1933 * 100) + "%";
+		    video.style.width   = (pos.w / 1092 * 100) + "%";
+		    video.style.height  = (pos.h / 1933 * 100) + "%";
+		    video.style.display = "block";
+		}
+		
+		stage.update();
+		createjs.Ticker.removeEventListener("tick", stage);
+		
+		// ==========================================
+		// 4. ЛОГИКА ПЛЕЕРА ПО ТАЙМКОДАМ И СИНХРОННОГО АУДИО
+		// ==========================================
+		var currentMode = "relax";
+		var currentColorKey = "c1";
+		var isFotoOpen = false;
+		var isSoundGlobalOn = true;
+		
+		function getCurrentRange() {
+		    return SEGMENTS[currentMode][currentColorKey];
+		}
+		
+		function getVideoOffsetInSegment() {
+		    if (!video) return 0;
+		    var range = getCurrentRange();
+		    if (!range) return 0;
+		    return Math.max(0, video.currentTime - range.start);
+		}
+		
+		function releaseAudioFocus() {
+		    var ids = ["audio_relax", "audio_dinamika"];
+		    for (var i = 0; i < ids.length; i++) {
+		        var el = document.getElementById(ids[i]);
+		        if (el) {
+		            el.pause();
+		            el.removeAttribute("src");
+		        }
+		    }
+		}
+		
+		function getOrCreateAudio(id, fileSrc) {
+		    var el = document.getElementById(id);
+		    if (!el) {
+		        el = document.createElement("audio");
+		        el.id = id;
+		        el.loop = true;
+		        el.preload = "metadata";
+		        el.setAttribute("playsinline", "");
+		        document.body.appendChild(el);
+		    }
+		    if (!el.getAttribute("src") || el.getAttribute("src") !== fileSrc) {
+		        el.src = fileSrc;
+		    }
+		    return el;
+		}
+		
+		releaseAudioFocus();
+		
+		function playAudioAtTime(audioEl, syncTime) {
+		    audioEl.muted = false;
+		    audioEl.volume = 1.0;
+		
+		    if (syncTime === null || syncTime === undefined) {
+		        audioEl.play().catch(function(){});
+		        return;
+		    }
+		
+		    var applyTimeAndPlay = function() {
+		        try {
+		            if (audioEl.duration && syncTime >= audioEl.duration) {
+		                audioEl.currentTime = syncTime % audioEl.duration;
+		            } else {
+		                audioEl.currentTime = syncTime;
+		            }
+		        } catch(e) {}
+		        audioEl.play().catch(function(){});
+		    };
+		
+		    if (audioEl.readyState >= 1) {
+		        applyTimeAndPlay();
+		    } else {
+		        var onMeta = function() {
+		            audioEl.removeEventListener("loadedmetadata", onMeta);
+		            applyTimeAndPlay();
+		        };
+		        audioEl.addEventListener("loadedmetadata", onMeta);
+		        audioEl.play().catch(function(){});
+		    }
+		}
+		
+		function syncAudio(shouldPlay, syncTime) {
+		    if (!isSoundGlobalOn) {
+		        releaseAudioFocus();
+		        return;
+		    }
+		
+		    if (isFotoOpen || !shouldPlay) {
+		        var r = document.getElementById("audio_relax");
+		        var d = document.getElementById("audio_dinamika");
+		        if (r) r.pause();
+		        if (d) d.pause();
+		        return;
+		    }
+		
+		    if (currentMode === "relax") {
+		        var aDin = document.getElementById("audio_dinamika");
+		        if (aDin) { aDin.pause(); aDin.removeAttribute("src"); }
+		
+		        var aRel = getOrCreateAudio("audio_relax", AUDIO_RELAX_FILE);
+		        playAudioAtTime(aRel, syncTime);
+		    } else {
+		        var aRel2 = document.getElementById("audio_relax");
+		        if (aRel2) { aRel2.pause(); aRel2.removeAttribute("src"); }
+		
+		        var aDin2 = getOrCreateAudio("audio_dinamika", AUDIO_DINAMIKA_FILE);
+		        playAudioAtTime(aDin2, syncTime);
+		    }
+		}
+		
+		function handleTimeUpdate() {
+		    if (!video || video.paused || video.seeking) return;
+		    var range = getCurrentRange();
+		    if (!range) return;
+		
+		    var startTime = range.start;
+		    var endTime = range.end - 0.15;
+		
+		    if (video.currentTime >= endTime || video.currentTime < startTime - 0.3) {
+		        try { video.currentTime = startTime; } catch(e) {}
+		        if (isSoundGlobalOn) {
+		            syncAudio(true, 0);
+		        }
+		    }
+		}
+		
+		function switchPlayback(newMode, newColorKey, forcePlay) {
+		    if (!video) return;
+		
+		    video.style.display = "block";
+		    video.style.opacity = "1";
+		    video.style.visibility = "visible";
+		
+		    // Повторное нажатие на активный режим — пауза / запуск с текущей секунды
+		    if (newMode !== null && newMode === currentMode && newColorKey === null && forcePlay) {
+		        if (!video.paused) {
+		            video.pause();
+		            syncAudio(false, null);
+		        } else {
+		            video.play().catch(function(){});
+		            syncAudio(true, null);
+		        }
+		        return;
+		    }
+		
+		    var oldRange = getCurrentRange();
+		    var offsetInsideSegment = Math.max(0, video.currentTime - oldRange.start);
+		    var isColorOnlySwitch = (newMode === null && newColorKey !== null);
+		    var isModeSwitch = (newMode !== null && newMode !== currentMode);
+		
+		    if (newMode !== null) {
+		        currentMode = newMode;
+		    }
+		    if (newColorKey !== null) {
+		        currentColorKey = newColorKey;
+		    }
+		
+		    var newRange = getCurrentRange();
+		    var newDuration = newRange.end - newRange.start;
+		    var targetTime = newRange.start;
+		
+		    if (isColorOnlySwitch && offsetInsideSegment < newDuration - 0.25) {
+		        targetTime = newRange.start + offsetInsideSegment;
+		    }
+		
+		    try { video.currentTime = targetTime; } catch(e) {}
+		
+		    if (forcePlay || !video.paused) {
+		        video.play().catch(function(){});
+		        syncAudio(true, isModeSwitch ? 0 : null);
+		    }
+		}
+		
+		// Инициализация видео (автоматически подменяет файл, если пришли с page1 или page3)
+		if (video) {
+		    video.style.display = "block";
+		    video.style.opacity = "1";
+		    video.style.visibility = "visible";
+		    video.style.zIndex = "50";
+		    video.preload = "metadata";
+		    video.ontimeupdate = handleTimeUpdate;
+		    video.muted = true;
+		
+		    var startPos = SEGMENTS.relax.c1.start;
+		
+		    if (video.getAttribute("data-file") !== PAGE_VIDEO_FILE) {
+		        video.setAttribute("data-file", PAGE_VIDEO_FILE);
+		        video.src = PAGE_VIDEO_FILE;
+		        video.load();
+		        
+		        var onMeta = function() {
+		            video.removeEventListener("loadedmetadata", onMeta);
+		            try { video.currentTime = startPos; } catch(e) {}
+		        };
+		        video.addEventListener("loadedmetadata", onMeta);
+		    } else {
+		        video.pause();
+		        try { video.currentTime = startPos; } catch(e) {}
+		    }
+		}
+		
+		// ==========================================
+		// 5. ОБРАБОТЧИКИ КНОПОК
+		// ==========================================
+		if (this.relax) {
+		    this.relax.removeAllEventListeners("click");
+		    this.relax.addEventListener("click", function() { switchPlayback("relax", null, true); });
+		}
+		
+		if (this.dinamika) {
+		    this.dinamika.removeAllEventListeners("click");
+		    this.dinamika.addEventListener("click", function() { switchPlayback("dinamika", null, true); });
+		}
+		
+		if (this.color1) {
+		    this.color1.removeAllEventListeners("click");
+		    this.color1.addEventListener("click", function() { switchPlayback(null, "c1", false); });
+		}
+		if (this.color2) {
+		this.color2.removeAllEventListeners("click");
+		this.color2.addEventListener("click", function() { switchPlayback(null, "c2", false); });
+		}
+		if (this.color3) {
+		this.color3.removeAllEventListeners("click");
+		this.color3.addEventListener("click", function() { switchPlayback(null, "c3", false); });
+		}
+		if (fotoBtn) {
+		fotoBtn.removeAllEventListeners("click");
+		fotoBtn.addEventListener("click", function() {
+		if (fotoObj) {
+		fotoObj.visible = !fotoObj.visible;
+		isFotoOpen = fotoObj.visible;
+		if (isFotoOpen) {
+		if (video) {
+		video.pause();
+		video.style.display = "none";
+		}
+		syncAudio(false, null);
+		} else {
+		if (video) video.style.display = "block";
+		syncAudio(video && !video.paused, getVideoOffsetInSegment());
+		}
+		stage.update();
+		}
+		});
+		}
+		if (this.btn_mute) {
+		this.btn_mute.removeAllEventListeners("click");
+		this.btn_mute.addEventListener("click", function() {
+		isSoundGlobalOn = !isSoundGlobalOn;
+		if (!isSoundGlobalOn) {
+		releaseAudioFocus();
+		} else {
+		var currentVideoSec = getVideoOffsetInSegment();
+		syncAudio(video && !video.paused, currentVideoSec);
+		}
+		});
+		}
+		if (this.nazad) {
+		this.nazad.removeAllEventListeners("click");
+		this.nazad.addEventListener("click", function() {
+		if (video) {
+		video.pause();
+		video.ontimeupdate = null;
+		video.style.display = "none";
+		}
+		releaseAudioFocus();
+		createjs.Ticker.addEventListener("tick", stage);
+		this.parent.gotoAndStop(0);
+		stage.update();
+		}.bind(this));
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12));
+
+	// Symbol_3
+	this.pr2_foto = new lib.Symbol3();
+	this.pr2_foto.name = "pr2_foto";
+	this.pr2_foto.setTransform(570.4,818.5,1,1,0,0,0,426.4,276.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.pr2_foto).to({_off:true},1).wait(11));
+
+	// spezifikaziy
+	this.pr2_button = new lib.Symbol4();
+	this.pr2_button.name = "pr2_button";
+	this.pr2_button.setTransform(871.2,190.7,1.2078,1.2795,0,0,0,125.7,44.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.pr2_button).wait(12));
+
+	// paket
+	this.instance = new lib.Symbol2("synched",0);
+	this.instance.setTransform(369.6,194.2,1,1.1642,0,0,0,335,34.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12));
+
+	// Mute
+	this.btn_mute = new lib.Mute();
+	this.btn_mute.name = "btn_mute";
+	this.btn_mute.setTransform(938.95,1768.3,1.155,1.057,0,0,0,51.8,102.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.btn_mute).to({_off:true},1).wait(11));
+
+	// nazad
+	this.nazad = new lib.Symbol8();
+	this.nazad.name = "nazad";
+	this.nazad.setTransform(239,1717.1,1.0917,1.2132,0,0,0,157.1,45.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.nazad).to({_off:true},1).wait(11));
+
+	// Text
+	this.instance_1 = new lib.CachedBmp_5();
+	this.instance_1.setTransform(60.3,1344.75,0.966,0.966);
+
+	this.instance_2 = new lib.CachedBmp_4();
+	this.instance_2.setTransform(87.8,1644.65,0.966,0.966);
+
+	this.instance_3 = new lib.CachedBmp_3();
+	this.instance_3.setTransform(64.55,1466.45,0.966,0.966);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1}]}).to({state:[]},1).wait(11));
+
+	// Color1
+	this.color1 = new lib.Color11();
+	this.color1.name = "color1";
+	this.color1.setTransform(523.15,1630.1,1.1156,1.1209,0,0,0,80,160.1);
+
+	this.timeline.addTween(cjs.Tween.get(this.color1).to({_off:true},1).wait(11));
+
+	// Color2
+	this.color2 = new lib.Color2();
+	this.color2.name = "color2";
+	this.color2.setTransform(697.3,1581.8,1.5325,1.4817,0,0,0,39.2,83.3);
+
+	this.timeline.addTween(cjs.Tween.get(this.color2).to({_off:true},1).wait(11));
+
+	// Color3
+	this.color3 = new lib.Color3();
+	this.color3.name = "color3";
+	this.color3.setTransform(903.55,1621,1.5551,1.5272,0,0,0,38.8,110.1);
+
+	this.timeline.addTween(cjs.Tween.get(this.color3).to({_off:true},1).wait(11));
+
+	// relax
+	this.relax = new lib.Symbol11();
+	this.relax.name = "relax";
+	this.relax.setTransform(573.1,1374.75,1,1,0,0,0,131.5,43.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.relax).wait(12));
+
+	// dinamika
+	this.dinamika = new lib.Symbol13();
+	this.dinamika.name = "dinamika";
+	this.dinamika.setTransform(882.15,1375.25,1,1,0,0,0,129,44);
+
+	this.timeline.addTween(cjs.Tween.get(this.dinamika).wait(12));
+
+	// ramka_video
+	this.video_slot = new lib.video_slot();
+	this.video_slot.name = "video_slot";
+	this.video_slot.setTransform(545.65,785.05,1.0038,1,0,0,0,530.5,530.6);
+	this.video_slot.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.video_slot).to({_off:true},1).wait(11));
+
+	// page1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FF9900").ss(2,1,1).p("EhSZiEeMCkzAAAMAAAEI9MikzAAAg");
+	this.shape.setTransform(540.575,966.325);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#001320").s().p("EhSZCEfMAAAkI9MCkzAAAMAAAEI9g");
+	this.shape_1.setTransform(540.575,966.325);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).to({state:[]},1).wait(11));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(12.2,117.4,1155.7,1697.8999999999999);
 
 
 // stage content:
@@ -1703,7 +2751,7 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {page1:1,start_fon:0};
+	props.labels = {page1:3,"page1":2,"page1":1,start_fon:0};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
@@ -1721,28 +2769,44 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(4));
 
-	// page1
-	this.page1 = new lib.page1();
+	// page2_copy
+	this.page1 = new lib.page_3();
 	this.page1.name = "page1";
 	this.page1.setTransform(545.65,966.8,1.0347,1.0351,0,0,0,540.5,966.3);
 	this.page1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.page1).wait(1).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.page1).wait(3).to({_off:false},0).wait(1));
+
+	// page2
+	this.page1_1 = new lib.page_2();
+	this.page1_1.name = "page1_1";
+	this.page1_1.setTransform(545.65,966.8,1.0347,1.0351,0,0,0,540.5,966.3);
+	this.page1_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.page1_1).wait(2).to({_off:false},0).to({_off:true},1).wait(1));
+
+	// page1
+	this.page1_2 = new lib.page1();
+	this.page1_2.name = "page1_2";
+	this.page1_2.setTransform(545.65,966.8,1.0347,1.0351,0,0,0,540.5,966.3);
+	this.page1_2._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.page1_2).wait(1).to({_off:false},0).to({_off:true},1).wait(2));
 
 	// start_fon
 	this.start_fon = new lib.start_fon();
 	this.start_fon.name = "start_fon";
 	this.start_fon.setTransform(551.1,966.8,1,1,0,0,0,540.5,966.3);
 
-	this.timeline.addTween(cjs.Tween.get(this.start_fon).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.start_fon).to({_off:true},1).wait(3));
 	this.start_fon.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(541.4,1054.6,640.4,791);
+p.nominalBounds = new cjs.Rectangle(545,1054.6,649.8,791);
 // library properties:
 lib.properties = {
 	id: 'F3E39131A32EBC4FA342DDF442C1D8E5',
