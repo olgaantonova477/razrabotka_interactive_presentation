@@ -2879,10 +2879,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/PRICE1.png", id:"PRICE1"},
-		{src:"images/PRICE2.png", id:"PRICE2"},
-		{src:"images/PRICE3.png", id:"PRICE3"},
-		{src:"images/index_atlas_1.png", id:"index_atlas_1"}
+		{src:"images/PRICE1.png?1795715461155", id:"PRICE1"},
+		{src:"images/PRICE2.png?1795715461155", id:"PRICE2"},
+		{src:"images/PRICE3.png?1795715461155", id:"PRICE3"},
+		{src:"images/index_atlas_1.png?1795715461129", id:"index_atlas_1"}
 	],
 	preloads: []
 };
