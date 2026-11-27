@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_1", frames: [[336,557,282,5],[253,324,277,76],[0,526,162,48],[253,408,167,5],[532,341,341,52],[532,395,341,52],[0,415,341,52],[0,469,236,55],[253,402,257,4],[0,324,251,89],[343,449,208,75],[648,162,263,87],[553,449,275,52],[648,251,258,88],[553,503,195,52],[875,341,126,126],[0,0,160,160],[162,0,160,160],[928,469,94,94],[324,0,160,160],[486,0,160,160],[648,0,160,160],[810,0,160,160],[913,162,96,96],[0,162,160,160],[238,469,96,96],[162,162,160,160],[324,162,160,160],[486,162,160,160],[830,469,96,96]]},
+		{name:"index_atlas_1", frames: [[473,515,282,5],[739,252,277,76],[553,396,162,48],[553,446,167,5],[0,324,341,52],[343,342,341,52],[0,378,341,52],[553,458,236,55],[757,515,257,4],[486,251,251,89],[343,396,208,75],[486,162,263,87],[0,432,275,52],[751,162,258,88],[791,458,195,52],[739,330,126,126],[0,0,160,160],[0,486,94,94],[162,0,160,160],[324,0,160,160],[486,0,160,160],[648,0,160,160],[867,330,96,96],[810,0,160,160],[277,473,96,96],[0,162,160,160],[162,162,160,160],[324,162,160,160],[375,473,96,96]]},
 		{name:"index_atlas_2", frames: [[0,0,973,1413],[0,1415,1118,176],[1120,1425,361,264],[0,1593,1118,176],[1120,1691,361,264],[0,1771,1118,176],[1483,1430,361,264],[1846,1430,160,160],[1483,1696,240,240],[1846,1592,160,160],[1725,1754,160,160],[1120,1026,447,397],[975,0,1024,1024],[1569,1026,353,402]]}
 ];
 
@@ -203,13 +203,6 @@ lib.ssMetadata = [
 
 
 
-(lib.color11pngcopy = function() {
-	this.initialize(ss["index_atlas_2"]);
-	this.gotoAndStop(10);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.color2 = function() {
 	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(15);
@@ -218,8 +211,8 @@ lib.ssMetadata = [
 
 
 (lib.color3 = function() {
-	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(16);
+	this.initialize(ss["index_atlas_2"]);
+	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -247,7 +240,7 @@ lib.ssMetadata = [
 
 (lib.premium = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(17);
+	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -272,84 +265,84 @@ p.nominalBounds = new cjs.Rectangle(0,0,1637,2310);
 
 (lib.s_1 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(18);
+	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_19 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(19);
+	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_20 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(20);
+	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_24 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(21);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_25 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(22);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_31 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(23);
+	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_37 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(24);
+	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_4 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(25);
+	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_5 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(26);
+	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.s_9 = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(27);
+	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.standart = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(28);
+	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.zv = function() {
 	this.initialize(ss["index_atlas_1"]);
-	this.gotoAndStop(29);
+	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -395,6 +388,29 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.video_slot, new cjs.Rectangle(-1,-1,1063.1,1063.1), null);
+
+
+(lib.Symbol33 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_5
+	this.instance = new lib.PRICE1();
+	this.instance.setTransform(0,0,0.6512,0.675);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,1066,1559.4);
 
 
 (lib.Symbol13 = function(mode,startPosition,loop,reversed) {
@@ -582,29 +598,6 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-8,0,268.9,97);
-
-
-(lib.Symbol3 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_3
-	this.instance = new lib.PRICE1();
-	this.instance.setTransform(0,0,0.6108,0.6184);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12));
-
-	this._renderFirstFrame();
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,999.9,1428.4);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop,reversed) {
@@ -881,7 +874,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.foto_video, new cjs.Rectangle(-2,0,257,55), null);
 
 
-(lib.Color111 = function(mode,startPosition,loop,reversed) {
+(lib.Color11 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -892,15 +885,22 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Color1
-	this.instance = new lib.color11pngcopy();
-	this.instance.setTransform(21.55,18.1);
+	// Layer_2
+	this.instance = new lib.color11();
+	this.instance.setTransform(0,1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
+	// Color1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FFCC66").ss(4,1,1).p("AKnAAQAAEQjHC/QjHDAkZAAQkZAAjGjAQjHi/AAkQQAAkPDHi/QDGjAEZAAQEZAADHDAQDHC/AAEPg");
+	this.shape.setTransform(80.425,84.7678,1,0.9864);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Color111, new cjs.Rectangle(21.6,18.1,160,160), null);
+}).prototype = getMCSymbolPrototype(lib.Color11, new cjs.Rectangle(0,1,160,160), null);
 
 
 (lib.Color3 = function(mode,startPosition,loop,reversed) {
@@ -999,372 +999,6 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,298.7,107);
-
-
-(lib.Color11 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_2
-	this.instance = new lib.color11();
-	this.instance.setTransform(0,1);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	// Color1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FFCC66").ss(4,1,1).p("AKnAAQAAEQjHC/QjHDAkZAAQkZAAjGjAQjHi/AAkQQAAkPDHi/QDGjAEZAAQEZAADHDAQDHC/AAEPg");
-	this.shape.setTransform(80.425,84.7678,1,0.9864);
-
-	this.instance_1 = new lib.Color111();
-	this.instance_1.setTransform(82.45,82.45,1,0.9864,0,0,0,104,100.5);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Color11, new cjs.Rectangle(0,1,160,160), null);
-
-
-(lib.start_fon = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	this.isSingleFrame = false;
-	// timeline functions:
-	this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
-		/* Stop at This Frame */
-		this.stop();
-		
-		// Включаем плавный тикер 30 FPS и поддержку касаний
-		createjs.Ticker.framerate = 30;
-		createjs.Ticker.timingMode = createjs.Ticker.RAF;
-		createjs.Touch.enable(stage);
-		
-		var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-		if (!isTouchDevice && !stage.mouseMoveOutside) { 
-		    stage.enableMouseOver(15); 
-		}
-		
-		// ==========================================
-		// 1. РАЗБЛОКИРОВКА АУДИО ДЛЯ IPHONE ПРИ ПЕРВОМ КАСАНИИ
-		// ==========================================
-		function unlockMobileAudio() {
-		    var tracks = [
-		        { id: "audio_relax", src: "videos/sound_relax.mp3" },
-		        { id: "audio_dinamika", src: "videos/sound_dinamika.mp3" }
-		    ];
-		    for (var i = 0; i < tracks.length; i++) {
-		        var el = document.getElementById(tracks[i].id);
-		        if (!el) {
-		            el = document.createElement("audio");
-		            el.id = tracks[i].id;
-		            el.src = tracks[i].src;
-		            el.loop = true;
-		            el.preload = "none";
-		            el.setAttribute("playsinline", "");
-		            document.body.appendChild(el);
-		        }
-		        el.muted = true;
-		        el.play().then(function(a) {
-		            return function() { a.pause(); a.currentTime = 0; a.muted = false; };
-		        }(el)).catch(function(){});
-		    }
-		    window.removeEventListener("touchstart", unlockMobileAudio);
-		    window.removeEventListener("pointerdown", unlockMobileAudio);
-		}
-		window.addEventListener("touchstart", unlockMobileAudio, { passive: true });
-		window.addEventListener("pointerdown", unlockMobileAudio, { passive: true });
-		
-		// ==========================================
-		// 2. DMITRY_TEXT (СТАТИЧНАЯ КНОПКА ПЕРЕХОДА НА САЙТ)
-		// ==========================================
-		if (this.Dmitry_foto) {
-		    this.Dmitry_foto.visible = false;
-		}
-		
-		if (this.Dmitry_text) {
-		    this.Dmitry_text.cursor = "pointer";
-		    if (!this.Dmitry_text.hitArea) {
-		        var hit = new createjs.Shape();
-		        hit.graphics.beginFill("#000").drawRect(0, 0, 250, 60); 
-		        this.Dmitry_text.hitArea = hit;
-		    }
-		    this.Dmitry_text.removeAllEventListeners("click");
-		    this.Dmitry_text.addEventListener("click", function() {
-		        // Укажите нужную ссылку вместо google.com
-		        window.open("https://google.com", "_self");
-		    });
-		}
-		
-		// ==========================================
-		// 3. НАСТРОЙКА ПЕРЕХОДОВ ДЛЯ ССЫЛОК И КАРТОЧЕК
-		// ==========================================
-		var self = this;
-		
-		function setupLinkButton(btn, url) {
-		    if (!btn) return;
-		    btn.cursor = "pointer";
-		    if (btn.originY === undefined) btn.originY = btn.y;
-		    if (!btn.hitArea) {
-		        var h = new createjs.Shape();
-		        h.graphics.beginFill("#000").drawRect(0, 0, 250, 60);
-		        btn.hitArea = h;
-		    }
-		    btn.removeAllEventListeners("click");
-		    btn.addEventListener("click", function() {
-		        window.open(url, "_self");
-		    });
-		}
-		
-		setupLinkButton(this.foto_video, "https://google.com");
-		setupLinkButton(this.Svet_Event, "https://google.com");
-		
-		function setupPackageButton(btn, targetFrameIndex) {
-		    if (!btn) return;
-		    btn.cursor = "pointer";
-		    if (btn.originY === undefined) {
-		        btn.originY = btn.y;
-		        btn.originScaleX = btn.scaleX;
-		        btn.originScaleY = btn.scaleY;
-		    }
-		    if (!btn.hitArea) {
-		        var h = new createjs.Shape();
-		        h.graphics.beginFill("#000").drawRect(0, 0, 250, 150);
-		        btn.hitArea = h;
-		    }
-		    btn.removeAllEventListeners("click");
-		    btn.addEventListener("click", function() {
-		        unlockMobileAudio();
-		        stopStartPageBounce();
-		        self.parent.gotoAndStop(targetFrameIndex);
-		    });
-		}
-		
-		setupPackageButton(this.myButton1, 1);
-		setupPackageButton(this.myButton2, 2);
-		setupPackageButton(this.myButton3, 3);
-		
-		// ==========================================
-		// 4. ЖИВОЕ ПОДПРЫГИВАНИЕ НА КАЖДОМ КАДРЕ (РАБОТАЕТ НА ANDROID, IPHONE И ПК)
-		// ==========================================
-		var animStartTime = Date.now();
-		
-		function animateButtonsOnTick() {
-		    // Если мы уже ушли со стартовой страницы — останавливаем анимацию
-		    if (!self.stage || self.parent.currentFrame !== 0) {
-		        stopStartPageBounce();
-		        return;
-		    }
-		
-		    var t = (Date.now() - animStartTime) / 1000; // время в секундах
-		
-		    // Плавное подпрыгивание для foto_video и Svet_Event (высота 12 пикселей)
-		    if (self.foto_video) {
-		        var wave1 = Math.sin(t * 3.2);
-		        self.foto_video.y = self.foto_video.originY - Math.max(0, wave1) * 12;
-		    }
-		    if (self.Svet_Event) {
-		        var wave2 = Math.sin(t * 3.2 - 1.0);
-		        self.Svet_Event.y = self.Svet_Event.originY - Math.max(0, wave2) * 12;
-		    }
-		
-		    // Энергичное подпрыгивание волной для карточек myButton1, myButton2, myButton3 (высота 16 пикселей + пульсация)
-		    var cards = [self.myButton1, self.myButton2, self.myButton3];
-		    for (var i = 0; i < cards.length; i++) {
-		        var card = cards[i];
-		        if (card) {
-		            var phase = t * 3.5 - (i * 0.85);
-		            var jump = Math.max(0, Math.sin(phase)); // только вверх (подпрыгивание)
-		            card.y = card.originY - (jump * 16);
-		            card.scaleX = card.originScaleX * (1 + jump * 0.03);
-		            card.scaleY = card.originScaleY * (1 + jump * 0.03);
-		        }
-		    }
-		}
-		
-		function stopStartPageBounce() {
-		    createjs.Ticker.removeEventListener("tick", animateButtonsOnTick);
-		    var allObjs = [self.foto_video, self.Svet_Event, self.myButton1, self.myButton2, self.myButton3];
-		    for (var i = 0; i < allObjs.length; i++) {
-		        var obj = allObjs[i];
-		        if (obj) {
-		            if (obj.originY !== undefined) obj.y = obj.originY;
-		            if (obj.originScaleX !== undefined) obj.scaleX = obj.originScaleX;
-		            if (obj.originScaleY !== undefined) obj.scaleY = obj.originScaleY;
-		        }
-		    }
-		}
-		
-		// Запускаем анимацию (предварительно очистив старый слушатель, если вернулись по кнопке "Назад")
-		createjs.Ticker.removeEventListener("tick", animateButtonsOnTick);
-		createjs.Ticker.addEventListener("tick", animateButtonsOnTick);
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// Svet_Event
-	this.Svet_Event = new lib.Svet_Event_text();
-	this.Svet_Event.name = "Svet_Event";
-	this.Svet_Event.setTransform(790.75,227.45,1.2249,1.3237,0,0,0,106.7,29.4);
-	var Svet_EventFilter_1 = new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,0,0);
-	this.Svet_Event.filters = [Svet_EventFilter_1];
-	this.Svet_Event.cache(-3,-2,218,62);
-
-	this.timeline.addTween(cjs.Tween.get(this.Svet_Event).wait(1));
-	this.timeline.addTween(cjs.Tween.get(Svet_EventFilter_1).wait(1));
-
-	// photo_video_copy
-	this.foto_video = new lib.foto_video();
-	this.foto_video.name = "foto_video";
-	this.foto_video.setTransform(528.35,861.75,1,1,0,0,0,126.7,27.2);
-
-	this.timeline.addTween(cjs.Tween.get(this.foto_video).wait(1));
-
-	// Dmitry
-	this.Dmitry_text = new lib.Dmitry_text();
-	this.Dmitry_text.name = "Dmitry_text";
-	this.Dmitry_text.setTransform(780.15,165.9,1,1,0,0,0,81.2,24.9);
-	var Dmitry_textFilter_2 = new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,0,0);
-	this.Dmitry_text.filters = [Dmitry_textFilter_2];
-	this.Dmitry_text.cache(-4,-2,171,54);
-
-	this.timeline.addTween(cjs.Tween.get(this.Dmitry_text).wait(1));
-	this.timeline.addTween(cjs.Tween.get(Dmitry_textFilter_2).wait(1));
-
-	// Crystal_mini
-	this.myButton1 = new lib.Crystal_mini();
-	this.myButton1.name = "myButton1";
-	this.myButton1.setTransform(208.8,1672.55,1,1,0,0,0,149.3,53.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.myButton1).wait(1));
-	this.myButton1.addEventListener("tick", AdobeAn.handleFilterCache);
-
-	// Crystal_medium
-	this.myButton2 = new lib.Crystal_medium();
-	this.myButton2.name = "myButton2";
-	this.myButton2.setTransform(522.45,1672.55,1,1,0,0,0,149.3,53.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.myButton2).wait(1));
-
-	// Crystal_pro
-	this.myButton3 = new lib.Crystal_pro();
-	this.myButton3.name = "myButton3";
-	this.myButton3.setTransform(836.3,1672.55,1,1,0,0,0,149.3,53.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.myButton3).wait(1));
-
-	// zapas_knopka
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FF9900").ss(4,2,1).p("AzpoCMAnSAAAQCJAABhBhQBhBhAACJIAAFvQAACJhhBhQhhBhiJAAMgnSAAAQiJAAhghhQhhhhAAiJIAAlvQAAiJBhhhQBghhCJAAg");
-	this.shape.setTransform(211.7365,1673.6289,0.6163,0.391);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#330000").s().p("AzoIDQiKAAhghhQhhhhAAiJIAAlvQAAiJBhhhQBghhCKAAMAnRAAAQCJAABhBhQBhBhAACJIAAFvQAACJhhBhQhhBhiJAAg");
-	this.shape_1.setTransform(211.7365,1673.6289,0.6163,0.391);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	// zapas_gradient
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#6600FF").ss(0.1,2,1).p("AYTHCMgwlAAAIAAuDMAwlAAAg");
-	this.shape_2.setTransform(210.5326,1673.8811,0.6551,0.4673);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.lf(["#E38308","#FFFFFF"],[0,1],155.5,0,-155.5,0).s().p("A4SHCIAAuDMAwlAAAIAAODg");
-	this.shape_3.setTransform(210.5326,1673.8811,0.6551,0.4673);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2}]}).wait(1));
-
-	// Smile
-	this.instance = new lib._2728();
-	this.instance.setTransform(830,322,0.2617,0.2517);
-
-	this.instance_1 = new lib.s_4();
-	this.instance_1.setTransform(865,143,0.5808,0.6112);
-
-	this.instance_2 = new lib.Koron();
-	this.instance_2.setTransform(503,1272,0.1435,0.1565);
-
-	this.instance_3 = new lib.s_1();
-	this.instance_3.setTransform(160,772,0.5679,0.5745);
-
-	this.instance_4 = new lib.s_1();
-	this.instance_4.setTransform(193,718,0.5679,0.5745);
-
-	this.instance_5 = new lib.paal();
-	this.instance_5.setTransform(365,1106,0.1566,0.152);
-
-	this.instance_6 = new lib.s_37();
-	this.instance_6.setTransform(899,1110,0.2892,0.2975);
-
-	this.instance_7 = new lib.s_5();
-	this.instance_7.setTransform(232,1326,0.3669,0.3919);
-
-	this.instance_8 = new lib.s_20();
-	this.instance_8.setTransform(812,1488,0.4073,0.4319);
-
-	this.instance_9 = new lib.s_1();
-	this.instance_9.setTransform(52,664,0.5679,0.5745);
-
-	this.instance_10 = new lib.s_25();
-	this.instance_10.setTransform(839.8,973,0.5801,0.5646,0,0,180);
-
-	this.instance_11 = new lib.s_19();
-	this.instance_11.setTransform(877,1478,0.5405,0.5811);
-
-	this.instance_12 = new lib.s_24();
-	this.instance_12.setTransform(751,1500,0.3804,0.3586);
-
-	this.instance_13 = new lib.s_9();
-	this.instance_13.setTransform(503,489,0.372,0.4218);
-
-	this.instance_14 = new lib.s_31();
-	this.instance_14.setTransform(160,145,0.587,0.5652);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
-
-	// Text
-	this.instance_15 = new lib.CachedBmp_16();
-	this.instance_15.setTransform(51.9,137.95);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1));
-
-	// fon
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f().s("#FFCC66").ss(11,1,1).p("EhUSiV/MColAAAMAAAEr/MiolAAAg");
-	this.shape_4.setTransform(534.4,965.7992,1,0.9013);
-
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#00131E").s().p("EhUSCWAMAAAkr/MColAAAMAAAEr/g");
-	this.shape_5.setTransform(534.4,965.7992,1,0.9013);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.start_fon, new cjs.Rectangle(-10.6,95,1090,1741.6), null);
 
 
 (lib.page1 = function(mode,startPosition,loop,reversed) {
@@ -1747,10 +1381,10 @@ if (reversed == null) { reversed = false; }
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12));
 
-	// Symbol_3
-	this.pr1_foto = new lib.Symbol3();
+	// Symbol_33
+	this.pr1_foto = new lib.Symbol33();
 	this.pr1_foto.name = "pr1_foto";
-	this.pr1_foto.setTransform(540.35,1039.9,1.0643,1.0948,0,0,0,500.2,714.2);
+	this.pr1_foto.setTransform(543,1040.6,1,1,0,0,0,533,779.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.pr1_foto).wait(12));
 
@@ -1851,7 +1485,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(8,117.4,1147.2,1756.3999999999999);
+p.nominalBounds = new cjs.Rectangle(10,117.4,1145.2,1756.3999999999999);
 
 
 (lib.page_3 = function(mode,startPosition,loop,reversed) {
@@ -2832,6 +2466,340 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(4,117.4,1152.6,1756.3999999999999);
+
+
+(lib.start_fon = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		/* Stop at This Frame */
+		this.stop();
+		
+		// Включаем плавный тикер 30 FPS и поддержку касаний
+		createjs.Ticker.framerate = 30;
+		createjs.Ticker.timingMode = createjs.Ticker.RAF;
+		createjs.Touch.enable(stage);
+		
+		var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+		if (!isTouchDevice && !stage.mouseMoveOutside) { 
+		    stage.enableMouseOver(15); 
+		}
+		
+		// ==========================================
+		// 1. РАЗБЛОКИРОВКА АУДИО ДЛЯ IPHONE ПРИ ПЕРВОМ КАСАНИИ
+		// ==========================================
+		function unlockMobileAudio() {
+		    var tracks = [
+		        { id: "audio_relax", src: "videos/sound_relax.mp3" },
+		        { id: "audio_dinamika", src: "videos/sound_dinamika.mp3" }
+		    ];
+		    for (var i = 0; i < tracks.length; i++) {
+		        var el = document.getElementById(tracks[i].id);
+		        if (!el) {
+		            el = document.createElement("audio");
+		            el.id = tracks[i].id;
+		            el.src = tracks[i].src;
+		            el.loop = true;
+		            el.preload = "none";
+		            el.setAttribute("playsinline", "");
+		            document.body.appendChild(el);
+		        }
+		        el.muted = true;
+		        el.play().then(function(a) {
+		            return function() { a.pause(); a.currentTime = 0; a.muted = false; };
+		        }(el)).catch(function(){});
+		    }
+		    window.removeEventListener("touchstart", unlockMobileAudio);
+		    window.removeEventListener("pointerdown", unlockMobileAudio);
+		}
+		window.addEventListener("touchstart", unlockMobileAudio, { passive: true });
+		window.addEventListener("pointerdown", unlockMobileAudio, { passive: true });
+		
+		// ==========================================
+		// 2. DMITRY_TEXT (СТАТИЧНАЯ КНОПКА ПЕРЕХОДА НА САЙТ)
+		// ==========================================
+		if (this.Dmitry_foto) {
+		    this.Dmitry_foto.visible = false;
+		}
+		
+		if (this.Dmitry_text) {
+		    this.Dmitry_text.cursor = "pointer";
+		    if (!this.Dmitry_text.hitArea) {
+		        var hit = new createjs.Shape();
+		        hit.graphics.beginFill("#000").drawRect(0, 0, 250, 60); 
+		        this.Dmitry_text.hitArea = hit;
+		    }
+		    this.Dmitry_text.removeAllEventListeners("click");
+		    this.Dmitry_text.addEventListener("click", function() {
+		        // Укажите нужную ссылку вместо google.com
+		        window.open("https://google.com", "_self");
+		    });
+		}
+		
+		// ==========================================
+		// 3. НАСТРОЙКА ПЕРЕХОДОВ ДЛЯ ССЫЛОК И КАРТОЧЕК
+		// ==========================================
+		var self = this;
+		
+		function setupLinkButton(btn, url) {
+		    if (!btn) return;
+		    btn.cursor = "pointer";
+		    if (btn.originY === undefined) btn.originY = btn.y;
+		    if (!btn.hitArea) {
+		        var h = new createjs.Shape();
+		        h.graphics.beginFill("#000").drawRect(0, 0, 250, 60);
+		        btn.hitArea = h;
+		    }
+		    btn.removeAllEventListeners("click");
+		    btn.addEventListener("click", function() {
+		        window.open(url, "_self");
+		    });
+		}
+		
+		setupLinkButton(this.foto_video, "https://google.com");
+		setupLinkButton(this.Svet_Event, "https://google.com");
+		
+		function setupPackageButton(btn, targetFrameIndex) {
+		    if (!btn) return;
+		    btn.cursor = "pointer";
+		    if (btn.originY === undefined) {
+		        btn.originY = btn.y;
+		        btn.originScaleX = btn.scaleX;
+		        btn.originScaleY = btn.scaleY;
+		    }
+		    if (!btn.hitArea) {
+		        var h = new createjs.Shape();
+		        h.graphics.beginFill("#000").drawRect(0, 0, 250, 150);
+		        btn.hitArea = h;
+		    }
+		    btn.removeAllEventListeners("click");
+		    btn.addEventListener("click", function() {
+		        unlockMobileAudio();
+		        stopStartPageBounce();
+		        self.parent.gotoAndStop(targetFrameIndex);
+		    });
+		}
+		
+		setupPackageButton(this.myButton1, 1);
+		setupPackageButton(this.myButton2, 2);
+		setupPackageButton(this.myButton3, 3);
+		
+		// ==========================================
+		// 4. ЖИВОЕ ПОДПРЫГИВАНИЕ НА КАЖДОМ КАДРЕ (РАБОТАЕТ НА ANDROID, IPHONE И ПК)
+		// ==========================================
+		var animStartTime = Date.now();
+		
+		function animateButtonsOnTick() {
+		    // Если мы уже ушли со стартовой страницы — останавливаем анимацию
+		    if (!self.stage || self.parent.currentFrame !== 0) {
+		        stopStartPageBounce();
+		        return;
+		    }
+		
+		    var t = (Date.now() - animStartTime) / 1000; // время в секундах
+		
+		    // Плавное подпрыгивание для foto_video и Svet_Event (высота 12 пикселей)
+		    if (self.foto_video) {
+		        var wave1 = Math.sin(t * 3.2);
+		        self.foto_video.y = self.foto_video.originY - Math.max(0, wave1) * 12;
+		    }
+		    if (self.Svet_Event) {
+		        var wave2 = Math.sin(t * 3.2 - 1.0);
+		        self.Svet_Event.y = self.Svet_Event.originY - Math.max(0, wave2) * 12;
+		    }
+		
+		    // Энергичное подпрыгивание волной для карточек myButton1, myButton2, myButton3 (высота 16 пикселей + пульсация)
+		    var cards = [self.myButton1, self.myButton2, self.myButton3];
+		    for (var i = 0; i < cards.length; i++) {
+		        var card = cards[i];
+		        if (card) {
+		            var phase = t * 3.5 - (i * 0.85);
+		            var jump = Math.max(0, Math.sin(phase)); // только вверх (подпрыгивание)
+		            card.y = card.originY - (jump * 16);
+		            card.scaleX = card.originScaleX * (1 + jump * 0.03);
+		            card.scaleY = card.originScaleY * (1 + jump * 0.03);
+		        }
+		    }
+		}
+		
+		function stopStartPageBounce() {
+		    createjs.Ticker.removeEventListener("tick", animateButtonsOnTick);
+		    var allObjs = [self.foto_video, self.Svet_Event, self.myButton1, self.myButton2, self.myButton3];
+		    for (var i = 0; i < allObjs.length; i++) {
+		        var obj = allObjs[i];
+		        if (obj) {
+		            if (obj.originY !== undefined) obj.y = obj.originY;
+		            if (obj.originScaleX !== undefined) obj.scaleX = obj.originScaleX;
+		            if (obj.originScaleY !== undefined) obj.scaleY = obj.originScaleY;
+		        }
+		    }
+		}
+		
+		// Запускаем анимацию (предварительно очистив старый слушатель, если вернулись по кнопке "Назад")
+		createjs.Ticker.removeEventListener("tick", animateButtonsOnTick);
+		createjs.Ticker.addEventListener("tick", animateButtonsOnTick);
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Svet_Event
+	this.Svet_Event = new lib.Svet_Event_text();
+	this.Svet_Event.name = "Svet_Event";
+	this.Svet_Event.setTransform(790.75,227.45,1.2249,1.3237,0,0,0,106.7,29.4);
+	var Svet_EventFilter_1 = new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,0,0);
+	this.Svet_Event.filters = [Svet_EventFilter_1];
+	this.Svet_Event.cache(-3,-2,218,62);
+
+	this.timeline.addTween(cjs.Tween.get(this.Svet_Event).wait(1));
+	this.timeline.addTween(cjs.Tween.get(Svet_EventFilter_1).wait(1));
+
+	// photo_video_copy
+	this.foto_video = new lib.foto_video();
+	this.foto_video.name = "foto_video";
+	this.foto_video.setTransform(528.35,861.75,1,1,0,0,0,126.7,27.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.foto_video).wait(1));
+
+	// Dmitry
+	this.Dmitry_text = new lib.Dmitry_text();
+	this.Dmitry_text.name = "Dmitry_text";
+	this.Dmitry_text.setTransform(780.15,165.9,1,1,0,0,0,81.2,24.9);
+	var Dmitry_textFilter_2 = new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,0,0);
+	this.Dmitry_text.filters = [Dmitry_textFilter_2];
+	this.Dmitry_text.cache(-4,-2,171,54);
+
+	this.timeline.addTween(cjs.Tween.get(this.Dmitry_text).wait(1));
+	this.timeline.addTween(cjs.Tween.get(Dmitry_textFilter_2).wait(1));
+
+	// Crystal_mini
+	this.myButton1 = new lib.Crystal_mini();
+	this.myButton1.name = "myButton1";
+	this.myButton1.setTransform(208.8,1672.55,1,1,0,0,0,149.3,53.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.myButton1).wait(1));
+	this.myButton1.addEventListener("tick", AdobeAn.handleFilterCache);
+
+	// Crystal_medium
+	this.myButton2 = new lib.Crystal_medium();
+	this.myButton2.name = "myButton2";
+	this.myButton2.setTransform(522.45,1672.55,1,1,0,0,0,149.3,53.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.myButton2).wait(1));
+
+	// Crystal_pro
+	this.myButton3 = new lib.Crystal_pro();
+	this.myButton3.name = "myButton3";
+	this.myButton3.setTransform(836.3,1672.55,1,1,0,0,0,149.3,53.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.myButton3).wait(1));
+
+	// zapas_knopka
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FF9900").ss(4,2,1).p("AzpoCMAnSAAAQCJAABhBhQBhBhAACJIAAFvQAACJhhBhQhhBhiJAAMgnSAAAQiJAAhghhQhhhhAAiJIAAlvQAAiJBhhhQBghhCJAAg");
+	this.shape.setTransform(211.7365,1673.6289,0.6163,0.391);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#330000").s().p("AzoIDQiKAAhghhQhhhhAAiJIAAlvQAAiJBhhhQBghhCKAAMAnRAAAQCJAABhBhQBhBhAACJIAAFvQAACJhhBhQhhBhiJAAg");
+	this.shape_1.setTransform(211.7365,1673.6289,0.6163,0.391);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	// zapas_gradient
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#6600FF").ss(0.1,2,1).p("AYTHCMgwlAAAIAAuDMAwlAAAg");
+	this.shape_2.setTransform(210.5326,1673.8811,0.6551,0.4673);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.lf(["#E38308","#FFFFFF"],[0,1],155.5,0,-155.5,0).s().p("A4SHCIAAuDMAwlAAAIAAODg");
+	this.shape_3.setTransform(210.5326,1673.8811,0.6551,0.4673);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2}]}).wait(1));
+
+	// Smile
+	this.instance = new lib._2728();
+	this.instance.setTransform(830,322,0.2617,0.2517);
+
+	this.instance_1 = new lib.s_4();
+	this.instance_1.setTransform(865,143,0.5808,0.6112);
+
+	this.instance_2 = new lib.Koron();
+	this.instance_2.setTransform(503,1272,0.1435,0.1565);
+
+	this.instance_3 = new lib.s_1();
+	this.instance_3.setTransform(160,772,0.5679,0.5745);
+
+	this.instance_4 = new lib.s_1();
+	this.instance_4.setTransform(193,718,0.5679,0.5745);
+
+	this.instance_5 = new lib.paal();
+	this.instance_5.setTransform(365,1106,0.1566,0.152);
+
+	this.instance_6 = new lib.s_37();
+	this.instance_6.setTransform(899,1110,0.2892,0.2975);
+
+	this.instance_7 = new lib.s_5();
+	this.instance_7.setTransform(232,1326,0.3669,0.3919);
+
+	this.instance_8 = new lib.s_20();
+	this.instance_8.setTransform(812,1488,0.4073,0.4319);
+
+	this.instance_9 = new lib.s_1();
+	this.instance_9.setTransform(52,664,0.5679,0.5745);
+
+	this.instance_10 = new lib.s_25();
+	this.instance_10.setTransform(839.8,973,0.5801,0.5646,0,0,180);
+
+	this.instance_11 = new lib.s_19();
+	this.instance_11.setTransform(877,1478,0.5405,0.5811);
+
+	this.instance_12 = new lib.s_24();
+	this.instance_12.setTransform(751,1500,0.3804,0.3586);
+
+	this.instance_13 = new lib.s_9();
+	this.instance_13.setTransform(503,489,0.372,0.4218);
+
+	this.instance_14 = new lib.s_31();
+	this.instance_14.setTransform(160,145,0.587,0.5652);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
+
+	// Text
+	this.instance_15 = new lib.CachedBmp_16();
+	this.instance_15.setTransform(51.9,137.95);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(1));
+
+	// fon
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f().s("#FFCC66").ss(11,1,1).p("EhUSiV/MColAAAMAAAEr/MiolAAAg");
+	this.shape_4.setTransform(534.4,965.7992,1,0.9013);
+
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#00131E").s().p("EhUSCWAMAAAkr/MColAAAMAAAEr/g");
+	this.shape_5.setTransform(534.4,965.7992,1,0.9013);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.start_fon, new cjs.Rectangle(-10.6,95,1090,1741.6), null);
 
 
 // stage content:
