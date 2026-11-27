@@ -245,12 +245,6 @@ lib.ssMetadata = [
 
 
 
-(lib.PRICE1 = function() {
-	this.initialize(img.PRICE1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1637,2310);
-
-
 (lib.PRICE2 = function() {
 	this.initialize(img.PRICE2);
 }).prototype = p = new cjs.Bitmap();
@@ -402,14 +396,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.PRICE1();
-	this.instance.setTransform(-292,-617,0.7443,0.767);
+	this.instance = new lib.Bitmap4();
+	this.instance.setTransform(-764,-238,7.8534,8.5267);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol55, new cjs.Rectangle(-292,-617,1218.4,1771.8), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol55, new cjs.Rectangle(-764,-238,1633.5,639.5), null);
 
 
 (lib.Symbol11 = function(mode,startPosition,loop,reversed) {
@@ -1383,7 +1377,7 @@ if (reversed == null) { reversed = false; }
 	// Price1
 	this.pr1_foto = new lib.Symbol55();
 	this.pr1_foto.name = "pr1_foto";
-	this.pr1_foto.setTransform(665.05,1152.65,0.8718,0.8804,0,0,0,458.8,403.2);
+	this.pr1_foto.setTransform(732.1,1152.65,0.4571,0.8804,0,0,0,458.9,403.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.pr1_foto).wait(12));
 
@@ -1484,7 +1478,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(10.6,117.4,1144.6000000000001,1756.3999999999999);
+p.nominalBounds = new cjs.Rectangle(12.2,117.4,1143,1756.3999999999999);
 
 
 (lib.page_3 = function(mode,startPosition,loop,reversed) {
@@ -2873,7 +2867,6 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/PRICE1.png", id:"PRICE1"},
 		{src:"images/PRICE2.png", id:"PRICE2"},
 		{src:"images/PRICE3.png", id:"PRICE3"},
 		{src:"images/index_atlas_1.png", id:"index_atlas_1"},
