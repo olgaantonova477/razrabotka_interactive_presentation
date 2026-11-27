@@ -1516,14 +1516,14 @@ if (reversed == null) { reversed = false; }
 		// Реальные секунды начала (start) и конца (end) каждого куска внутри page3_all.mp4
 		var SEGMENTS = {
 		    relax: {
-		        c1: { start: 0,  end: 26 }, // color1 (Relax)
-		        c2: { start: 26, end: 52 }, // color2 (Relax)
-		        c3: { start: 52, end: 78 }  // color3 (Relax)
+		        c1: { start: 0,  end: 44 }, // color1 (Relax)
+		        c2: { start: 44, end: 88 }, // color2 (Relax)
+		        c3: { start: 88, end: 132 }  // color3 (Relax)
 		    },
 		    dinamika: {
-		        c1: { start: 78, end: 104 }, // color1 (Dinamika)
-		        c2: { start: 104, end: 130 }, // color2 (Dinamika)
-		        c3: { start: 130, end: 156 }  // color3 (Dinamika)
+		        c1: { start: 132, end: 176 }, // color1 (Dinamika)
+		        c2: { start: 176, end: 220 }, // color2 (Dinamika)
+		        c3: { start: 220, end: 264 }  // color3 (Dinamika)
 		    }
 		};
 		
