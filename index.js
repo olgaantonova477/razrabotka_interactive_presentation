@@ -2873,11 +2873,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/PRICE2.png?1795784506601", id:"PRICE2"},
-		{src:"images/PRICE3.png?1795784506601", id:"PRICE3"},
-		{src:"images/PRICE_1.png?1795784506601", id:"PRICE_1"},
-		{src:"images/index_atlas_1.png?1795784506571", id:"index_atlas_1"},
-		{src:"images/index_atlas_2.png?1795784506572", id:"index_atlas_2"}
+		{src:"images/PRICE2.png", id:"PRICE2"},
+		{src:"images/PRICE3.png", id:"PRICE3"},
+		{src:"images/PRICE_1.png", id:"PRICE_1"},
+		{src:"images/index_atlas_1.png", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png", id:"index_atlas_2"}
 	],
 	preloads: []
 };
